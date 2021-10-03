@@ -20,7 +20,7 @@
                   </button>
                   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-link" href="">Get CV</a>
+                        <a class="nav-link" href="% static 'CV_JaimeOrtizAragon.pdf' %}">Get CV</a>
                         <a class="nav-link active" href="/project">Projects</a>
                         <a class="nav-link" href="https://www.linkedin.com/in/jaime-ortiz-arag%C3%B3n-0380881a4/">Linkedin</a>
                         <a class="nav-link" href="https://github.com/imjaimeortiz">GitHub</a>
@@ -34,8 +34,29 @@
         </header>
         
         <main>
-
-
+          <div class="container">
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <h2>Latest posts</h2>
+            <hr />
+    
+            {% for project in projects.all %}
+            <h3>{{ project.title }}</h3>
+            <p class="card-text">{{ project.body }}</p>
+            <!-- Cargar los links de la doc y el enlace -->
+            {% if project.doc != "" %}
+            <a class="card-text" href="../static/{{project.doc}}">{{ project.doc }}</p>
+            {% endif %}
+            {% if project.link != "" %}
+            <a class="nav-link" href="{{ project.link }}">{{ project.link }}</a>
+            {% endif %}
+            <br />
+            <br />
+            <br />
+            {% endfor %}
+        </div>
         </main>
 
         <footer class="text-muted py-5">

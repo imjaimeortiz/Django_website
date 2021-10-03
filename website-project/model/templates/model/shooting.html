@@ -25,8 +25,8 @@
                         <a class="nav-link" href="https://www.linkedin.com/in/jaime-ortiz-arag%C3%B3n-0380881a4/">Linkedin</a>
                         <a class="nav-link" href="https://github.com/imjaimeortiz">GitHub</a>
                         <a class="nav-link" href="https://www.instagram.com/imjaimeortiz/">Instagram</a>
-                        <a class="nav-link" href="/model">Modelling</a>
-                        <a class="nav-link active" href="/fitness">Fitness</a>
+                        <a class="nav-link active" href="/model">Modelling</a>
+                        <a class="nav-link" href="/fitness">Fitness</a>
                     </div>
                   </div>
                 </div>
@@ -34,8 +34,16 @@
         </header>
         
         <main>
-
-
+          <br/>
+          <br/>
+          <br/>
+          <div class="container">
+            <h1 class="text-center pt-3">{{ shooting.title }}</h1>
+            <img style='height: 50%; width: 50%; object-fit: contain;' src="{{ shooting.image.url }}"/>
+            <p class="card-text">{{ shooting.description }}</p>
+            <p class="card-text">Photographer : {{ shooting.photographer }}</p>
+            <p class="card-text">Location : {{ shooting.location }}</p>
+        </div>
         </main>
 
         <footer class="text-muted py-5">

@@ -20,7 +20,7 @@
                   </button>
                   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-link" href="">Get CV</a>
+                        <a class="nav-link" href="{% static 'CV_JaimeOrtizAragon.pdf' %}">Get CV</a>
                         <a class="nav-link" href="/project">Projects</a>
                         <a class="nav-link" href="https://www.linkedin.com/in/jaime-ortiz-arag%C3%B3n-0380881a4/">Linkedin</a>
                         <a class="nav-link" href="https://github.com/imjaimeortiz">GitHub</a>
@@ -34,7 +34,26 @@
         </header>
         
         <main>
-
+          <br/>
+          <br/>
+          <br/>
+          <div class="album py-5 bg-light">
+            <div class="container">
+        
+              <div class="row">
+                {% for shooting in shootings.all %}
+                <div class="col-md-4">
+                  <div class="card mb-4 box-shadow">
+                    <img class="card-img-top" src="{{ shooting.image.url }}">
+                    <div class="card-body">
+                      <a class="card-text" href="{% url 'shooting' shooting.id %}">{{ shooting.title }}</a>
+                    </div>
+                  </div>
+                </div>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
 
         </main>
 
