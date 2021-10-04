@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% load static %}
+        <!-- Meta Tags for Bootstrap 4 -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap 4 CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <title>imjaimeortiz's website</title>
+<style>
+    body, html {
+    height: 100%;
+    }
+
+    .parallax {
+    /* The image used */
+    background-image: url('static/portrait.jpeg');
+
+    /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color:".bg-dark";
+    }
+
+    /* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+    @media only screen and (max-device-width: 1366px) {
+        .parallax {
+            background-attachment: scroll;
+        }
+   }
+
+</style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand active" href="/">Jaime Ortiz Aragón</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" href="project">Projects</a>
+                    <a class="nav-link" href="https://www.linkedin.com/in/jaime-ortiz-arag%C3%B3n-0380881a4/">Linkedin</a>
+                    <a class="nav-link" href="https://github.com/imjaimeortiz">GitHub</a>
+                    <a class="nav-link" href="https://www.instagram.com/imjaimeortiz/">Instagram</a>
+                    <a class="nav-link" href="model">Modelling</a>
+                        <!---<a class="nav-link" href="/fitness">Fitness</a>-->
+                    </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+<div class="parallax"></div>
+
+<main>
+    <section class="py-4 text-center container bg-dark">
+         <div class="row py-lg-5">
+           <div class="col-lg-6 col-md-8 mx-auto bg-dark text-white">
+             <h1 class="fw-light">Welcome to my blog</h1>
+             <br />
+             <br />
+             <br />
+             <p align="justify" class="lead bg-dark text-white">Hi, my name is Jaime Ortiz Aragón and I'm a 22 years-old boy living in Murcia, Spain.
+                 I have been graduated in Computer Engeneering by the University of Murcia in the speciality of Technologies of Information.
+                 I consider myself as such a disciplined person and hard-worker.
+                 I have the ability to work in different working areas with different kind of people.
+                 As time has shown in the degree, my learning curve is promising, as I have been improving my marks all along my studies and at the moment I keep on learning on my own.</p>
+             <p>
+               <a href="mailto:imjaimeortiz@gmail.com" class="btn btn-primary my-2">Contact</a>
+             </p>
+             <p>
+                <a href="{% static 'CV_JaimeOrtizAragon.pdf' %}" class="btn btn-primary my-2">Get CV</a>
+              </p>
+           </div>
+         </div>
+       </section>
+
+
+ </main>
+
+<div class="parallax"></div>
+
+<footer class="text-muted py-5 bg-dark">
+    <div class="container text-center text-white">
+      <p>©️ Jaime Ortiz Aragón {% now "Y" %}</p>
+    </div>
+</footer>
+</body>
+</html>
