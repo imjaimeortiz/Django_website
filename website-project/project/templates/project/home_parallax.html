@@ -8,7 +8,9 @@
         <!-- Bootstrap 4 CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <title>imjaimeortiz's website</title>
-<style>
+        <!-- Icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
     body, html {
     height: 100%;
     }
@@ -35,6 +37,36 @@
         }
    }
 
+   #section {
+     width: fit-content;
+   }
+
+    .fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+    .fa-linkedin {
+      background: #007bb5;
+      color: white;
+    }
+    .fa-instagram {
+  background: #125688;
+  color: white;
+  }
+    .fa-github {
+  background: #000000;
+  color: white;
+  }
+
 </style>
 </head>
 <body>
@@ -48,9 +80,9 @@
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                     <a class="nav-link" href="project">Projects</a>
-                    <a class="nav-link" href="https://www.linkedin.com/in/jaime-ortiz-arag%C3%B3n-0380881a4/">Linkedin</a>
-                    <a class="nav-link" href="https://github.com/imjaimeortiz">GitHub</a>
-                    <a class="nav-link" href="https://www.instagram.com/imjaimeortiz/">Instagram</a>
+                    <a href="https://www.linkedin.com/in/jaime-ortiz-arag%C3%B3n-0380881a4/" class="fa fa-linkedin"></a>
+                    <a href="https://github.com/imjaimeortiz" class="fa fa-github"></a>
+                    <a href="https://www.instagram.com/imjaimeortiz/" class="fa fa-instagram"></a>
                     <a class="nav-link" href="model">Modelling</a>
                         <!---<a class="nav-link" href="/fitness">Fitness</a>-->
                     </div>
@@ -62,9 +94,9 @@
 <div class="parallax"></div>
 
 <main>
-    <section class="py-4 text-center container bg-dark">
-         <div class="row py-lg-5">
-           <div class="col-lg-6 col-md-8 mx-auto bg-dark text-white">
+    <section class="text-center bg-dark" id="section">
+         <div class="row py-lg-5 mx">
+           <div class="col-lg-20 col-md-8 mx-auto bg-dark text-white">
              <h1 class="fw-light">Welcome to my blog</h1>
              <br />
              <br />
