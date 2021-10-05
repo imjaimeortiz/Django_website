@@ -36,6 +36,12 @@
   background: #000000;
   color: white;
   }
+
+ #footer {
+   position: fixed;
+   bottom: 0;
+   width: 100%;
+ }
         </style>
       </head>
     <body>
@@ -70,24 +76,27 @@
             <h2>Latest posts</h2>
             <hr />
     
-            {% for project in projects.all %}
+            {% for project in projects %}
             <h3>{{ project.title }}</h3>
             <p class="card-text">{{ project.body }}</p>
             <!-- Cargar los links de la doc y el enlace -->
             {% if project.doc != "" %}
-            <a class="card-text" href="../static/{{project.doc}}">{{ project.doc }}</p>
+            <a class="card-text" href="../static/{{project.doc}}">Documentación</p>
             {% endif %}
             {% if project.link != "" %}
-            <a class="nav-link" href="{{ project.link }}">{{ project.link }}</a>
+            <a class="card-text" href="{{ project.link }}">{{ project.link }}</a>
             {% endif %}
             <br />
             <br />
             <br />
             {% endfor %}
         </div>
+        <br />
+        <br />
+        <br />
         </main>
 
-        <footer class="text-muted py-5 bg-dark">
+        <footer class="text-muted py-3 bg-dark" id="footer">
           <div class="container text-center text-white">
             <p>©️ Jaime Ortiz Aragón {% now "Y" %}</p>
           </div>
