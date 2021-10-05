@@ -7,9 +7,6 @@ def home(request):
 
 def show_projects(request):
     projects = Project.objects.all()
-    list = projects.values_list('title', flat=True)
-    values = []
-    for object in list:
-        values.append(object)
-    projects = values[::-1]
-    return render(request, 'project/projects.html', {'projects': projects})
+    # This is to print from last added to oldest
+    last_projects = projects[::-1]
+    return render(request, 'project/projects.html', {'projects': last_projects})

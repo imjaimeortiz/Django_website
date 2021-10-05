@@ -44,7 +44,7 @@
     .fa {
   padding: 10px;
   font-size: 20px;
-  width: 50px;
+  width: 45px;
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
@@ -57,14 +57,20 @@
     .fa-linkedin {
       background: #007bb5;
       color: white;
+      margin-left: 10px;
+      margin-right: 10px;
     }
     .fa-instagram {
   background: #125688;
   color: white;
+  margin-left: 10px;
+      margin-right: 10px;
   }
     .fa-github {
   background: #000000;
   color: white;
+  margin-left: 10px;
+      margin-right: 10px; 
   }
 
 </style>
@@ -80,10 +86,10 @@
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                     <a class="nav-link" href="project">Projects</a>
-                    <a href="https://www.linkedin.com/in/jaime-ortiz-arag%C3%B3n-0380881a4/" class="fa fa-linkedin"></a>
-                    <a href="https://github.com/imjaimeortiz" class="fa fa-github"></a>
+                    <a  href="https://www.linkedin.com/in/jaime-ortiz-arag%C3%B3n-0380881a4/" class="fa fa-linkedin"></a>
+                    <a  href="https://github.com/imjaimeortiz" class="fa fa-github"></a>
                     <a href="https://www.instagram.com/imjaimeortiz/" class="fa fa-instagram"></a>
-                    <a class="nav-link" href="model">Modelling</a>
+                    <!--<a class="nav-link" href="model">Modelling</a>-->
                         <!---<a class="nav-link" href="/fitness">Fitness</a>-->
                     </div>
               </div>
@@ -108,10 +114,8 @@
                  As time has shown in the degree, my learning curve is promising, as I have been improving my marks all along my studies and at the moment I keep on learning on my own.</p>
              <p>
                <a href="mailto:imjaimeortiz@gmail.com" class="btn btn-primary my-2">Contact</a>
+               <a style="margin-left: 30px;" href="{% static 'CV_JaimeOrtizAragon.pdf' %}" class="btn btn-primary my-2">Get CV</a>
              </p>
-             <p>
-                <a href="{% static 'CV_JaimeOrtizAragon.pdf' %}" class="btn btn-primary my-2">Get CV</a>
-              </p>
            </div>
          </div>
          
