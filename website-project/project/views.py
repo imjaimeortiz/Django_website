@@ -3,7 +3,7 @@ from .models import Project
 
 # Create your views here.
 def home(request):
-    return render(request, 'project/home_parallax.html')
+    return render(request, 'project/home2.html')
 
 def show_projects(request):
     projects = Project.objects.all()

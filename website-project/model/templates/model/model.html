@@ -44,7 +44,7 @@
           }
 
           .ParallaxVideo{
-                padding-top: 1.5cm;
+                padding-top: 1.4cm;
                 height: max-content;
                 transition: 1s opacity;
                 background-attachment:scroll;
@@ -99,14 +99,12 @@
               <div style="padding-left: 4in; padding-right: 4in;" class="album py-5 bg-light">
                 <div class="container">
             
-                  <div class="row">
+                  <div style="align-items: center;" class="row">
                     {% for shooting in shootings.all %}
                     <div class="col-md-4">
                       <div class="card mb-5 box-shadow">
                         <img class="card-img-top" src="{{ shooting.image.url }}">
-                        <div class="card-body">
-                          <a class="card-text" href="{% url 'shooting' shooting.id %}">{{ shooting.title }}</a>
-                        </div>
+                        <a style="text-align: center; padding-top: 0.5cm;" class="card-title" href="{% url 'shooting' shooting.id %}">{{ shooting.title }}</a>
                       </div>
                     </div>
                     {% endfor %}
