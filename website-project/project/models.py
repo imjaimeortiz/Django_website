@@ -12,3 +12,15 @@ class Project(models.Model):
 
     def __str__(self):
         return self.title
+
+    def has_link(self):
+        if self.link != "":
+            return True
+        else :
+            return False
+    
+    def has_doc(self):
+        if self.doc != "":
+            return True
+        else :
+            return False

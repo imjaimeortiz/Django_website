@@ -65,7 +65,7 @@
                       <a href="https://www.linkedin.com/in/jaime-ortiz-arag%C3%B3n-0380881a4/" class="fa fa-linkedin"></a>
                       <a href="https://github.com/imjaimeortiz" class="fa fa-github"></a>
                       <a href="https://www.instagram.com/imjaimeortiz/" class="fa fa-instagram"></a>
-                      <a class="nav-link" href="/model">Modelling</a>
+                      <a class="nav-link active" href="/model">Modelling</a>
                       <!---<a class="nav-link" href="/fitness">Fitness</a>-->
                       </div>
                   </div>
@@ -77,12 +77,23 @@
           <br/>
           <br/>
           <br/>
-          <div class="container">
-            <h1 class="text-center pt-3">{{ shooting.title }}</h1>
-            <img style='height: 50%; width: 50%; object-fit: contain;' src="{{ shooting.image.url }}"/>
-            <p class="card-text">{{ shooting.description }}</p>
-            <p class="card-text">Photographer : {{ shooting.photographer }}</p>
-            <p class="card-text">Location : {{ shooting.location }}</p>
+          <h1 class="text-center pt-3">{{ shooting.title }}</h1>
+          {% if shooting.tall_shooting %}
+          <div style="max-height: 550px; max-width: 550px;" class="container">
+          {% else %}
+          <div style="max-height: 550px; max-width: 1000px;" class="container">
+          {% endif %}
+            <div class="card mb-4 box-shadow">
+              <img  class="card-img-top" src="{{ shooting.image.url }}">
+              <div class="card-body">
+                <p class="card-text">{{ shooting.description }}</p>
+                <p class="card-text">Photographer : {{ shooting.photographer }}</p>
+                <p class="card-text">Location : {{ shooting.location }}</p>
+              </div>
+            </div>
+            <!--<h1 class="text-center pt-3">{{ shooting.title }}</h1>-->
+            <!--<img style='height: 50%; width: 50%;' src="{{ shooting.image.url }}"/>-->
+
         </div>
         </main>
 

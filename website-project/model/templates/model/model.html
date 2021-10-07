@@ -43,11 +43,26 @@
               margin-right: 10px; 
           }
 
+          .ParallaxVideo{
+                height: fit-content;
+                transition: 1s opacity;
+                background-attachment:scroll;
+            }
+            .ParallaxVideo video{ 
+              width: 100%;
+              height: 100%;
+              position: fixed;
+              object-fit: cover;
+              z-index: 0;
+            }
+
             #footer {
               position: fixed;
               bottom: 0;
               width: 100%;
             }
+
+        
         </style>          
     </head>
     <body>
@@ -65,7 +80,7 @@
                       <a href="https://www.linkedin.com/in/jaime-ortiz-arag%C3%B3n-0380881a4/" class="fa fa-linkedin"></a>
                       <a href="https://github.com/imjaimeortiz" class="fa fa-github"></a>
                       <a href="https://www.instagram.com/imjaimeortiz/" class="fa fa-instagram"></a>
-                      <a class="nav-link" href="/model">Modelling</a>
+                      <a class="nav-link active" href="/model">Modelling</a>
                         <!---<a class="nav-link" href="/fitness">Fitness</a>-->
                       </div>
                   </div>
@@ -73,30 +88,33 @@
               </nav>
         </header>
         
-        <main>
-          <br/>
-          <br/>
-          <br/>
-          <div class="album py-5 bg-light">
-            <div class="container">
-        
-              <div class="row">
-                {% for shooting in shootings.all %}
-                <div class="col-md-4">
-                  <div class="card mb-4 box-shadow">
-                    <img class="card-img-top" src="{{ shooting.image.url }}">
-                    <div class="card-body">
-                      <a class="card-text" href="{% url 'shooting' shooting.id %}">{{ shooting.title }}</a>
+        <div class="ParallaxVideo">
+          <video autoplay muted loop>
+          <source src="{% static 'model_video.mp4' %}" type="video/mp4">
+          </video>
+               <br/>
+              <br/>
+              <br/>
+              <div style="padding-left: 4in; padding-right: 4in;" class="album py-5 bg-light">
+                <div class="container">
+            
+                  <div class="row">
+                    {% for shooting in shootings.all %}
+                    <div class="col-md-4">
+                      <div class="card mb-5 box-shadow">
+                        <img class="card-img-top" src="{{ shooting.image.url }}">
+                        <div class="card-body">
+                          <a class="card-text" href="{% url 'shooting' shooting.id %}">{{ shooting.title }}</a>
+                        </div>
+                      </div>
                     </div>
+                    {% endfor %}
                   </div>
                 </div>
-                {% endfor %}
               </div>
             </div>
-          </div>
 
-        </main>
-
+        </div>
         <footer class="text-muted py-3 bg-dark" id="footer">
           <div class="container text-center text-white">
             <p>©️ Jaime Ortiz Aragón {% now "Y" %}</p>

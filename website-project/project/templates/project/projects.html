@@ -11,43 +11,43 @@
                 <!-- Icon library -->
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <style>
-              .fa {
-  padding: 10px;
-  font-size: 20px;
-  width: 45px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
-}
-  /* Add a hover effect if you want */
-  .fa:hover {
-    opacity: 0.7;
-  }
+          .fa {
+            padding: 10px;
+            font-size: 20px;
+            width: 45px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 50%;
+          }
+            /* Add a hover effect if you want */
+            .fa:hover {
+              opacity: 0.7;
+            }
 
-  .fa-linkedin {
-      background: #007bb5;
-      color: white;
-      margin-left: 10px;
-      margin-right: 10px;
-    }
-    .fa-instagram {
-  background: #125688;
-  color: white;
-  margin-left: 10px;
-      margin-right: 10px;
-  }
-    .fa-github {
-  background: #000000;
-  color: white;
-  margin-left: 10px;
-      margin-right: 10px; 
-  }
+            .fa-linkedin {
+                background: #007bb5;
+                color: white;
+                margin-left: 10px;
+                margin-right: 10px;
+              }
+              .fa-instagram {
+            background: #125688;
+            color: white;
+            margin-left: 10px;
+                margin-right: 10px;
+            }
+              .fa-github {
+            background: #000000;
+            color: white;
+            margin-left: 10px;
+                margin-right: 10px; 
+            }
 
- #footer {
-   position: fixed;
-   bottom: 0;
-   width: 100%;
- }
+          #footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+          }
         </style>
       </head>
     <body>
@@ -61,7 +61,7 @@
                   </button>
                   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                      <a class="nav-link" href="/project">Projects</a>
+                      <a class="nav-link active" href="/project">Projects</a>
                       <a href="https://www.linkedin.com/in/jaime-ortiz-arag%C3%B3n-0380881a4/" class="fa fa-linkedin"></a>
                       <a href="https://github.com/imjaimeortiz" class="fa fa-github"></a>
                       <a href="https://www.instagram.com/imjaimeortiz/" class="fa fa-instagram"></a>
@@ -86,10 +86,10 @@
             <h3>{{ project.title }}</h3>
             <p class="card-text">{{ project.body }}</p>
             <!-- Cargar los links de la doc y el enlace -->
-            {% if project.doc != "" %}
+            {% if project.has_doc %}
             <a class="card-text" href="../static/{{project.doc}}">Documentación</p>
             {% endif %}
-            {% if project.link != "" %}
+            {% if project.has_link %}
             <a class="card-text" href="{{ project.link }}">{{ project.link }}</a>
             {% endif %}
             <br />
