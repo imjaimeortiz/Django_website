@@ -18,10 +18,6 @@ def sort_latest(projects):
 # Buttons for languages
 def show_languages(request, language_id):
 
-    if language_id == "Others":
-        projects_in_language = Project.objects.all().filter(language={'Java', 'Python', 'Android', 'C'})
-    else:    
-        projects_in_language = Project.objects.all().filter(language=language_id)
-    
+    projects_in_language = Project.objects.all().filter(language=language_id)    
     last_projects = sort_latest(projects_in_language)
     return render(request, 'project/language.html', {'projects' : last_projects, 'language' : language_id})
