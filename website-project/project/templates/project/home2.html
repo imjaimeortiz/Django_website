@@ -57,11 +57,10 @@
               </button>
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link" href="project">Projects</a>
-                    <a  href="https://www.linkedin.com/in/jaime-ortiz-arag%C3%B3n-0380881a4/" class="fa fa-linkedin"></a>
-                    <a  href="https://github.com/imjaimeortiz" class="fa fa-github"></a>
-                    <a href="https://www.instagram.com/imjaimeortiz/" class="fa fa-instagram"></a>
-                    <a class="nav-link" href="model">Modelling</a>
+                    <a class="nav-link" href="/project">Projects</a>
+                    <a class="nav-link" href="/model">Modelling</a>
+                    <a href="mailto:imjaimeortiz@gmail.com" class="nav-link">Contact</a>
+                    <a href="{% static 'CV_JaimeOrtizAragon.pdf' %}" class="nav-link">Get CV</a>
                         <!---<a class="nav-link" href="/fitness">Fitness</a>-->
                     </div>
               </div>
@@ -72,10 +71,26 @@
 <div class="parallax"></div>
 
 <main>
+
+    <br />
+    <br />
+    <br />
+    <h1 style="text-align: center;" class="fw-light text-dark">Find projects</h1>
+    <div  class="row py-lg-5 mx">
+        <div style="display: flex; margin: 0 auto; align-items: center;" class="col-lg-20 col-md-8 mx-auto bg-light text-white">
+            <a style="text-align: center; padding: 0.5cm;" class="card-body bg-dark" href="">Python</a>
+            <a style="text-align: center; padding: 0.5cm;" class="card-body bg-dark" href="">Java</a>
+            <a style="text-align: center; padding: 0.5cm;" class="card-body bg-dark" href="">C</a>
+            <a style="text-align: center; padding: 0.5cm;" class="card-body bg-dark" href="">Android</a>
+            <a style="text-align: center; padding: 0.5cm;" class="card-body bg-dark" href="">Others</a>
+        </div>
+    </div>
+
+
     <div class="row py-lg-5 mx">
         <div class="col-lg-20 col-md-8 mx-auto bg-light text-white">
             <h1 style="text-align: center;"  class="fw-light text-dark">About me</h1>
-            <img align="middle" src="{% static 'portrait.jpeg' %}" height="500" width="380"/>
+            <img style="display: block; margin: 0 auto;" src="{% static 'portrait.jpeg' %}" height="500" width="380"/>
              <br />
              <br />
              <br />
@@ -84,30 +99,9 @@
                     I consider myself as such a disciplined person and hard-worker.
                     I have the ability to work in different working areas with different kind of people.
                     As time has shown in the degree, my learning curve is promising, as I have been improving my marks all along my studies and at the moment I keep on learning on my own.</p>
-            <p>
-                <a href="mailto:imjaimeortiz@gmail.com" class="btn btn-primary my-2">Contact</a>
-                <a style="margin-left: 30px;" href="{% static 'CV_JaimeOrtizAragon.pdf' %}" class="btn btn-primary my-2">Get CV</a>
-            </p>
+
         </div>
     </div>
-     
-    <div class="row py-lg-5 mx">
-        <div style= "align-items: center; display: inline-block" class="col-lg-20 col-md-8 mx-auto bg-light text-white">
-            <h1 style="text-align: center;" class="fw-light text-dark">Find projects</h1>
-
-            <div style= "display: inline-block" class="card mb-5 box-shadow">
-                <a style="text-align: center; padding: 0.5cm;" class="card-body bg-dark" href="">Python</a>
-            </div>
-            <div style= "display: inline-block" class="card mb-5 box-shadow">
-                <a style="text-align: center; padding: 0.5cm;" class="card-body bg-dark" href="">Java</a>
-            </div>
-            <div style= "display: inline-block" class="card mb-5 box-shadow">
-                <a style="text-align: center; padding: 0.5cm;" class="card-body bg-dark" href="">C</a>
-            </div>
-            <div style= "display: inline-block" class="card mb-5 box-shadow">
-                <a style="text-align: center; padding: 0.5cm;" class="card-body bg-dark" href="">Others</a>
-            </div>
-        </div>
 
 
  </main>
@@ -117,6 +111,9 @@
 <footer class="text-muted py-3 bg-dark">
     <div class="container text-center text-white">
       <p>©️ Jaime Ortiz Aragón {% now "Y" %}</p>
+      <a  href="https://www.linkedin.com/in/jaime-ortiz-arag%C3%B3n-0380881a4/" class="fa fa-linkedin"></a>
+      <a  href="https://github.com/imjaimeortiz" class="fa fa-github"></a>
+      <a href="https://www.instagram.com/imjaimeortiz/" class="fa fa-instagram"></a>
     </div>
 </footer>
 </body>

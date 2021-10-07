@@ -52,54 +52,53 @@
     </head>
     <body>
         
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="/">Jaime Ortiz Aragón</a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                      <a class="nav-link" href="project">Projects</a>
-                      <a href="https://www.linkedin.com/in/jaime-ortiz-arag%C3%B3n-0380881a4/" class="fa fa-linkedin"></a>
-                      <a href="https://github.com/imjaimeortiz" class="fa fa-github"></a>
-                      <a href="https://www.instagram.com/imjaimeortiz/" class="fa fa-instagram"></a>
-                      <a class="nav-link active" href="/model">Modelling</a>
-                      <!---<a class="nav-link" href="/fitness">Fitness</a>-->
-                      </div>
-                  </div>
-                </div>
-              </nav>
-        </header>
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand active" href="/">Jaime Ortiz Aragón</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" href="/project">Projects</a>
+                    <a class="nav-link" href="/model">Modelling</a>
+                    <a href="mailto:imjaimeortiz@gmail.com" class="nav-link">Contact</a>
+                    <a href="{% static 'CV_JaimeOrtizAragon.pdf' %}" class="nav-link">Get CV</a>
+                        <!---<a class="nav-link" href="/fitness">Fitness</a>-->
+                    </div>
+              </div>
+            </div>
+          </nav>
+    </header>
         
         <main>
           <br/>
           <br/>
-          <br/>
           <h1 class="text-center pt-3">{{ shooting.title }}</h1>
           {% if shooting.tall_shooting %}
-          <div style="max-height: 550px; max-width: 550px;" class="container">
+          <div style="max-height: 350px; max-width: 350px;" class="container">
           {% else %}
-          <div style="max-height: 550px; max-width: 1000px;" class="container">
-          {% endif %}
-            <div class="card mb-4 box-shadow">
-              <img  class="card-img-top" src="{{ shooting.image.url }}">
-              <div class="card-body">
-                <p class="card-text">{{ shooting.description }}</p>
-                <p class="card-text">Photographer : {{ shooting.photographer }}</p>
-                <p class="card-text">Location : {{ shooting.location }}</p>
+            <div style="max-height: 350px; max-width: 1000px;" class="container">
+            {% endif %}
+              <div class="card mb-4 box-shadow">
+                <img  class="card-img-top" src="{{ shooting.image.url }}">
+                <div class="card-body">
+                  <p class="card-text">{{ shooting.description }}</p>
+                  <p class="card-text">Photographer : {{ shooting.photographer }}</p>
+                  <p class="card-text">Location : {{ shooting.location }}</p>
+                </div>
               </div>
             </div>
-            <!--<h1 class="text-center pt-3">{{ shooting.title }}</h1>-->
-            <!--<img style='height: 50%; width: 50%;' src="{{ shooting.image.url }}"/>-->
-
-        </div>
+          </div>
         </main>
 
         <footer class="text-muted py-3 bg-dark" id="footer">
           <div class="container text-center text-white">
             <p>©️ Jaime Ortiz Aragón {% now "Y" %}</p>
+            <a  href="https://www.linkedin.com/in/jaime-ortiz-arag%C3%B3n-0380881a4/" class="fa fa-linkedin"></a>
+            <a  href="https://github.com/imjaimeortiz" class="fa fa-github"></a>
+            <a href="https://www.instagram.com/imjaimeortiz/" class="fa fa-instagram"></a>
           </div>
       </footer>
 

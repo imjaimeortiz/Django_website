@@ -9,6 +9,8 @@ class Project(models.Model):
     body = models.TextField()
     link = models.TextField(default="", blank=True)
     doc = models.TextField(default="", blank=True)
+    language = models.TextField(null=True, blank=True)
+    pub_date = models.DateField(null=True, blank=True)
 
     def __str__(self):
         return self.title

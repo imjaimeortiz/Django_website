@@ -52,26 +52,25 @@
       </head>
     <body>
         
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="/">Jaime Ortiz Aragón</a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                      <a class="nav-link active" href="/project">Projects</a>
-                      <a href="https://www.linkedin.com/in/jaime-ortiz-arag%C3%B3n-0380881a4/" class="fa fa-linkedin"></a>
-                      <a href="https://github.com/imjaimeortiz" class="fa fa-github"></a>
-                      <a href="https://www.instagram.com/imjaimeortiz/" class="fa fa-instagram"></a>
-                      <a class="nav-link" href="/model">Modelling</a>
-                      <!---<a class="nav-link" href="/fitness">Fitness</a>-->
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand active" href="/">Jaime Ortiz Aragón</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" href="/project">Projects</a>
+                    <a class="nav-link" href="/model">Modelling</a>
+                    <a href="mailto:imjaimeortiz@gmail.com" class="nav-link">Contact</a>
+                    <a href="{% static 'CV_JaimeOrtizAragon.pdf' %}" class="nav-link">Get CV</a>
+                        <!---<a class="nav-link" href="/fitness">Fitness</a>-->
                     </div>
-                  </div>
-                </div>
-              </nav>
-        </header>
+              </div>
+            </div>
+          </nav>
+    </header>
         
         <main>
           <div class="container">
@@ -102,9 +101,12 @@
         <br />
         </main>
 
-        <footer class="text-muted py-3 bg-dark" id="footer">
+        <footer class="text-muted py-3 bg-dark">
           <div class="container text-center text-white">
             <p>©️ Jaime Ortiz Aragón {% now "Y" %}</p>
+            <a  href="https://www.linkedin.com/in/jaime-ortiz-arag%C3%B3n-0380881a4/" class="fa fa-linkedin"></a>
+            <a  href="https://github.com/imjaimeortiz" class="fa fa-github"></a>
+            <a href="https://www.instagram.com/imjaimeortiz/" class="fa fa-instagram"></a>
           </div>
       </footer>
         <!-- Bootstrap 4 Scripts -->
