@@ -8,8 +8,8 @@
         <!-- Bootstrap 4 CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <title>imjaimeortiz's website</title>
-        <!-- Icon library -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                <!-- Icon library -->
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <style>
           .fa {
             padding: 10px;
@@ -25,58 +25,41 @@
             }
 
             .fa-linkedin {
-              background: #007bb5;
-              color: white;
-              margin-left: 10px;
-              margin-right: 10px;
+                background: #007bb5;
+                color: white;
+                margin-left: 10px;
+                margin-right: 10px;
+              }
+              .fa-instagram {
+            background: #125688;
+            color: white;
+            margin-left: 10px;
+                margin-right: 10px;
             }
-            .fa-instagram {
-          background: #125688;
-          color: white;
-          margin-left: 10px;
-              margin-right: 10px;
+              .fa-github {
+            background: #000000;
+            color: white;
+            margin-left: 10px;
+                margin-right: 10px; 
+            }
+
+          #footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
           }
-            .fa-github {
-          background: #000000;
-          color: white;
-          margin-left: 10px;
-              margin-right: 10px; 
-          }
-
-          .ParallaxVideo{
-                padding-top: 1.4cm;
-                height: fit-content;
-                transition: 1s opacity;
-                background-attachment:scroll;
-            }
-            .ParallaxVideo video{ 
-              width: 100%;
-              height: 100%;
-              position: fixed;
-              object-fit: cover;
-              z-index: 0;
-            }
-
-            #footer {
-              position: fixed;
-              bottom: 0;
-              width: 100%;
-              z-index: 999; 
-            }
-
-        
-        </style>          
-    </head>
+        </style>
+      </head>
     <body>
         
-      <header style="position: fixed; width: 100%; top: 0; z-index: 999;">
+      <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
               <a class="navbar-brand active" href="/">Jaime Ortiz Aragón</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div style="object-fit: cover;" class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                     <a class="nav-link" href="/project">Projects</a>
                     <a class="nav-link" href="/model">Modelling</a>
@@ -89,30 +72,44 @@
           </nav>
     </header>
         
-        <div class="ParallaxVideo">
-          <video autoplay muted loop>
-          <source src="{% static 'video_model.mp4' %}" type="video/mp4">
-          </video>
-              <br/>
-              <br/>
-              <div style="padding-left: 4in; padding-right: 4in;" class="album py-5 bg-light">
-                <div class="container">
-                  <div style="align-items: center;" class="row">
-                    {% for shooting in shootings.all %}
-                    <div class="col-md-4">
-                      <div class="card mb-5 box-shadow">
-                        <img class="card-img-top" src="{{ shooting.image.url }}">
-                        <a style="text-align: center; padding-top: 0.5cm;" class="card-title" href="{% url 'shooting' shooting.id %}">{{ shooting.title }}</a>
-                      </div>
-                    </div>
-                    {% endfor %}
-                  </div>
+        <main>
+
+            <div  class="row py-lg-5 mx">
+                <div style="display: flex; margin: 0 auto; align-items: center;" class="col-lg-20 col-md-8 mx-auto bg-light text-white">
+                    <a style="text-align: center; padding: 0.5cm;" class="card-body bg-dark" href="/Python">Python</a>
+                    <a style="text-align: center; padding: 0.5cm;" class="card-body bg-dark" href="/Java">Java</a>
+                    <a style="text-align: center; padding: 0.5cm;" class="card-body bg-dark" href="/C">C</a>
+                    <a style="text-align: center; padding: 0.5cm;" class="card-body bg-dark" href="/Android">Android</a>
+                    <a style="text-align: center; padding: 0.5cm;" class="card-body bg-dark" href="/Other">Other</a>
                 </div>
-              </div>
             </div>
 
+          <div class="container">
+            <br/>
+            <h2>{{ language }} projects</h2>
+            <hr />
+    
+            {% for project in projects %}
+            <h3>{{ project.title }}</h3>
+            <p class="card-text">{{ project.body }}</p>
+            <!-- Cargar los links de la doc y el enlace -->
+            {% if project.has_doc %}
+            <a class="card-text" href="../static/{{project.doc}}">Documentación</p>
+            {% endif %}
+            {% if project.has_link %}
+            <a class="card-text" href="{{ project.link }}">{{ project.link }}</a>
+            {% endif %}
+            <br />
+            <br />
+            <br />
+            {% endfor %}
         </div>
-        <footer id="footer" class="text-muted py-3 bg-dark">
+        <br />
+        <br />
+        <br />
+        </main>
+
+        <footer id='footer' class="text-muted py-3 bg-dark">
           <div class="container text-center text-white">
             <p>©️ Jaime Ortiz Aragón {% now "Y" %}</p>
             <a  href="https://www.linkedin.com/in/jaime-ortiz-arag%C3%B3n-0380881a4/" class="fa fa-linkedin"></a>
@@ -120,7 +117,6 @@
             <a href="https://www.instagram.com/imjaimeortiz/" class="fa fa-instagram"></a>
           </div>
       </footer>
-
         <!-- Bootstrap 4 Scripts -->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

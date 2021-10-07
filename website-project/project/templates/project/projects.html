@@ -48,6 +48,14 @@
             bottom: 0;
             width: 100%;
           }
+
+          #footer {
+              position: fixed;
+              bottom: 0;
+              width: 100%;
+              z-index: 999; 
+            }
+
         </style>
       </head>
     <body>
@@ -101,7 +109,7 @@
         <br />
         </main>
 
-        <footer class="text-muted py-3 bg-dark">
+        <footer id="footer" class="text-muted py-3 bg-dark">
           <div class="container text-center text-white">
             <p>©️ Jaime Ortiz Aragón {% now "Y" %}</p>
             <a  href="https://www.linkedin.com/in/jaime-ortiz-arag%C3%B3n-0380881a4/" class="fa fa-linkedin"></a>

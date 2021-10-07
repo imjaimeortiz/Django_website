@@ -23,6 +23,7 @@ from django.conf import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', project.views.home, name='home'),
+    path('<str:language_id>', project.views.show_languages, name='languages'),
     path('project/', include('project.urls')),
     path('model/', include('model.urls')),
     path('fitness/', include('fitness.urls')),
