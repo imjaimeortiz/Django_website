@@ -44,7 +44,8 @@
           }
 
           .ParallaxVideo{
-                height: fit-content;
+                padding-top: 1.5cm;
+                height: max-content;
                 transition: 1s opacity;
                 background-attachment:scroll;
             }
@@ -67,7 +68,7 @@
     </head>
     <body>
         
-        <header>
+        <header style="position: fixed; width: 100%; top: 0; object-fit: cover;">
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div class="container-fluid">
                   <a class="navbar-brand" href="/">Jaime Ortiz Aragón</a>
@@ -90,7 +91,7 @@
         
         <div class="ParallaxVideo">
           <video autoplay muted loop>
-          <source src="{% static 'model_video.mp4' %}" type="video/mp4">
+          <source src="{% static 'video_model.mp4' %}" type="video/mp4">
           </video>
                <br/>
               <br/>
