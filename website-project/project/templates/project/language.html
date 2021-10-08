@@ -78,7 +78,7 @@
                 <div style="display: flex; margin: 0 auto; align-items: center;" class="col-lg-20 col-md-8 mx-auto bg-light text-white">
                     <a style="text-align: center; padding: 0.5cm;" class="card-body bg-dark" href="/Python">Python</a>
                     <a style="text-align: center; padding: 0.5cm;" class="card-body bg-dark" href="/Java">Java</a>
-                    <!--<a style="text-align: center; padding: 0.5cm;" class="card-body bg-dark" href="/C">C</a>-->
+                    <a style="text-align: center; padding: 0.5cm;" class="card-body bg-dark" href="/C++">C++</a>
                     <a style="text-align: center; padding: 0.5cm;" class="card-body bg-dark" href="/Android">Android</a>
                     <a style="text-align: center; padding: 0.5cm;" class="card-body bg-dark" href="/Other">Other</a>
                 </div>
@@ -94,10 +94,14 @@
             <p class="card-text">{{ project.body }}</p>
             <!-- Cargar los links de la doc y el enlace -->
             {% if project.has_doc %}
-            <a class="card-text" href="../static/{{project.doc}}">Documentación</p>
+            <div>
+              <a class="card-text" href="{{ project.doc }}">Documentation</a>
+            </div>
             {% endif %}
             {% if project.has_link %}
-            <a class="card-text" href="{{ project.link }}">{{ project.link }}</a>
+            <div>
+              <a class="card-text" href="{{ project.link }}">{{ project.link }}</a>
+            </div>
             {% endif %}
             <br />
             <br />
