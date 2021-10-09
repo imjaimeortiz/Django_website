@@ -64,7 +64,7 @@
                     <a class="nav-link" href="/project">Projects</a>
                     <a class="nav-link" href="/model">Modelling</a>
                     <a href="mailto:imjaimeortiz@gmail.com" class="nav-link">Contact</a>
-                    <a href="{% static 'CV_JaimeOrtizAragon.pdf' %}" class="nav-link">Get CV</a>
+                    <a href="{% static 'CV_JaimeOrtizAragon.pdf' %}" target="_blank" class="nav-link">Get CV</a>
                         <!---<a class="nav-link" href="/fitness">Fitness</a>-->
                     </div>
               </div>
@@ -95,12 +95,12 @@
             <!-- Cargar los links de la doc y el enlace -->
             {% if project.has_doc %}
             <div>
-              <a class="card-text" href="{{ project.doc }}">Documentation</a>
+              <a class="card-text" href="../static/{{ project.doc }}" target="_blank">Documentation</a>
             </div>
             {% endif %}
             {% if project.has_link %}
             <div>
-              <a class="card-text" href="{{ project.link }}">{{ project.link }}</a>
+              <a class="card-text" href="{{ project.link }}" target="_blank">{{ project.link }}</a>
             </div>
             {% endif %}
             <br />
