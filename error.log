@@ -1,0 +1,791 @@
+[Sat Oct 16 13:20:14.963046 2021] [wsgi:error] [pid 29554:tid 139899674900032] [remote 127.0.0.1:54692] mod_wsgi (pid=29554): Failed to exec Python script file '/home/imjaimeortiz/Django_website/website-project/website/wsgi.py'.
+[Sat Oct 16 13:20:14.963108 2021] [wsgi:error] [pid 29554:tid 139899674900032] [remote 127.0.0.1:54692] mod_wsgi (pid=29554): Exception occurred processing WSGI script '/home/imjaimeortiz/Django_website/website-project/website/wsgi.py'.
+[Sat Oct 16 13:20:14.963528 2021] [wsgi:error] [pid 29554:tid 139899674900032] [remote 127.0.0.1:54692] Traceback (most recent call last):
+[Sat Oct 16 13:20:14.963576 2021] [wsgi:error] [pid 29554:tid 139899674900032] [remote 127.0.0.1:54692]   File "/home/imjaimeortiz/Django_website/website-project/website/wsgi.py", line 24, in <module>
+[Sat Oct 16 13:20:14.963582 2021] [wsgi:error] [pid 29554:tid 139899674900032] [remote 127.0.0.1:54692]     application = get_wsgi_application()
+[Sat Oct 16 13:20:14.963589 2021] [wsgi:error] [pid 29554:tid 139899674900032] [remote 127.0.0.1:54692]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+[Sat Oct 16 13:20:14.963593 2021] [wsgi:error] [pid 29554:tid 139899674900032] [remote 127.0.0.1:54692]     django.setup(set_prefix=False)
+[Sat Oct 16 13:20:14.963599 2021] [wsgi:error] [pid 29554:tid 139899674900032] [remote 127.0.0.1:54692]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/__init__.py", line 19, in setup
+[Sat Oct 16 13:20:14.963603 2021] [wsgi:error] [pid 29554:tid 139899674900032] [remote 127.0.0.1:54692]     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+[Sat Oct 16 13:20:14.963609 2021] [wsgi:error] [pid 29554:tid 139899674900032] [remote 127.0.0.1:54692]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/conf/__init__.py", line 82, in __getattr__
+[Sat Oct 16 13:20:14.963613 2021] [wsgi:error] [pid 29554:tid 139899674900032] [remote 127.0.0.1:54692]     self._setup(name)
+[Sat Oct 16 13:20:14.963618 2021] [wsgi:error] [pid 29554:tid 139899674900032] [remote 127.0.0.1:54692]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/conf/__init__.py", line 69, in _setup
+[Sat Oct 16 13:20:14.963622 2021] [wsgi:error] [pid 29554:tid 139899674900032] [remote 127.0.0.1:54692]     self._wrapped = Settings(settings_module)
+[Sat Oct 16 13:20:14.963628 2021] [wsgi:error] [pid 29554:tid 139899674900032] [remote 127.0.0.1:54692]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/conf/__init__.py", line 170, in __init__
+[Sat Oct 16 13:20:14.963632 2021] [wsgi:error] [pid 29554:tid 139899674900032] [remote 127.0.0.1:54692]     mod = importlib.import_module(self.SETTINGS_MODULE)
+[Sat Oct 16 13:20:14.963637 2021] [wsgi:error] [pid 29554:tid 139899674900032] [remote 127.0.0.1:54692]   File "/usr/lib/python3.9/importlib/__init__.py", line 127, in import_module
+[Sat Oct 16 13:20:14.963641 2021] [wsgi:error] [pid 29554:tid 139899674900032] [remote 127.0.0.1:54692]     return _bootstrap._gcd_import(name[level:], package, level)
+[Sat Oct 16 13:20:14.963647 2021] [wsgi:error] [pid 29554:tid 139899674900032] [remote 127.0.0.1:54692]   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+[Sat Oct 16 13:20:14.963654 2021] [wsgi:error] [pid 29554:tid 139899674900032] [remote 127.0.0.1:54692]   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+[Sat Oct 16 13:20:14.963661 2021] [wsgi:error] [pid 29554:tid 139899674900032] [remote 127.0.0.1:54692]   File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+[Sat Oct 16 13:20:14.963667 2021] [wsgi:error] [pid 29554:tid 139899674900032] [remote 127.0.0.1:54692]   File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+[Sat Oct 16 13:20:14.963675 2021] [wsgi:error] [pid 29554:tid 139899674900032] [remote 127.0.0.1:54692]   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+[Sat Oct 16 13:20:14.963681 2021] [wsgi:error] [pid 29554:tid 139899674900032] [remote 127.0.0.1:54692]   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+[Sat Oct 16 13:20:14.963694 2021] [wsgi:error] [pid 29554:tid 139899674900032] [remote 127.0.0.1:54692]   File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+[Sat Oct 16 13:20:14.963709 2021] [wsgi:error] [pid 29554:tid 139899674900032] [remote 127.0.0.1:54692] ModuleNotFoundError: No module named 'website'
+127.0.0.1 - - [16/Oct/2021:13:20:14 +0200] "GET / HTTP/1.1" 500 809 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+[Sat Oct 16 13:23:21.158090 2021] [wsgi:error] [pid 29554:tid 139899557402176] [remote 127.0.0.1:54804] mod_wsgi (pid=29554): Failed to exec Python script file '/home/imjaimeortiz/Django_website/website-project/website/wsgi.py'.
+[Sat Oct 16 13:23:21.158160 2021] [wsgi:error] [pid 29554:tid 139899557402176] [remote 127.0.0.1:54804] mod_wsgi (pid=29554): Exception occurred processing WSGI script '/home/imjaimeortiz/Django_website/website-project/website/wsgi.py'.
+[Sat Oct 16 13:23:21.158358 2021] [wsgi:error] [pid 29554:tid 139899557402176] [remote 127.0.0.1:54804] Traceback (most recent call last):
+[Sat Oct 16 13:23:21.158408 2021] [wsgi:error] [pid 29554:tid 139899557402176] [remote 127.0.0.1:54804]   File "/home/imjaimeortiz/Django_website/website-project/website/wsgi.py", line 24, in <module>
+[Sat Oct 16 13:23:21.158414 2021] [wsgi:error] [pid 29554:tid 139899557402176] [remote 127.0.0.1:54804]     application = get_wsgi_application()
+[Sat Oct 16 13:23:21.158421 2021] [wsgi:error] [pid 29554:tid 139899557402176] [remote 127.0.0.1:54804]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+[Sat Oct 16 13:23:21.158426 2021] [wsgi:error] [pid 29554:tid 139899557402176] [remote 127.0.0.1:54804]     django.setup(set_prefix=False)
+[Sat Oct 16 13:23:21.158432 2021] [wsgi:error] [pid 29554:tid 139899557402176] [remote 127.0.0.1:54804]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/__init__.py", line 19, in setup
+[Sat Oct 16 13:23:21.158436 2021] [wsgi:error] [pid 29554:tid 139899557402176] [remote 127.0.0.1:54804]     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+[Sat Oct 16 13:23:21.158442 2021] [wsgi:error] [pid 29554:tid 139899557402176] [remote 127.0.0.1:54804]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/conf/__init__.py", line 82, in __getattr__
+[Sat Oct 16 13:23:21.158446 2021] [wsgi:error] [pid 29554:tid 139899557402176] [remote 127.0.0.1:54804]     self._setup(name)
+[Sat Oct 16 13:23:21.158452 2021] [wsgi:error] [pid 29554:tid 139899557402176] [remote 127.0.0.1:54804]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/conf/__init__.py", line 69, in _setup
+[Sat Oct 16 13:23:21.158455 2021] [wsgi:error] [pid 29554:tid 139899557402176] [remote 127.0.0.1:54804]     self._wrapped = Settings(settings_module)
+[Sat Oct 16 13:23:21.158461 2021] [wsgi:error] [pid 29554:tid 139899557402176] [remote 127.0.0.1:54804]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/conf/__init__.py", line 170, in __init__
+[Sat Oct 16 13:23:21.158464 2021] [wsgi:error] [pid 29554:tid 139899557402176] [remote 127.0.0.1:54804]     mod = importlib.import_module(self.SETTINGS_MODULE)
+[Sat Oct 16 13:23:21.158470 2021] [wsgi:error] [pid 29554:tid 139899557402176] [remote 127.0.0.1:54804]   File "/usr/lib/python3.9/importlib/__init__.py", line 127, in import_module
+[Sat Oct 16 13:23:21.158473 2021] [wsgi:error] [pid 29554:tid 139899557402176] [remote 127.0.0.1:54804]     return _bootstrap._gcd_import(name[level:], package, level)
+[Sat Oct 16 13:23:21.158480 2021] [wsgi:error] [pid 29554:tid 139899557402176] [remote 127.0.0.1:54804]   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+[Sat Oct 16 13:23:21.158486 2021] [wsgi:error] [pid 29554:tid 139899557402176] [remote 127.0.0.1:54804]   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+[Sat Oct 16 13:23:21.158494 2021] [wsgi:error] [pid 29554:tid 139899557402176] [remote 127.0.0.1:54804]   File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+[Sat Oct 16 13:23:21.158518 2021] [wsgi:error] [pid 29554:tid 139899557402176] [remote 127.0.0.1:54804]   File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+[Sat Oct 16 13:23:21.158525 2021] [wsgi:error] [pid 29554:tid 139899557402176] [remote 127.0.0.1:54804]   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+[Sat Oct 16 13:23:21.158530 2021] [wsgi:error] [pid 29554:tid 139899557402176] [remote 127.0.0.1:54804]   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+[Sat Oct 16 13:23:21.158536 2021] [wsgi:error] [pid 29554:tid 139899557402176] [remote 127.0.0.1:54804]   File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+[Sat Oct 16 13:23:21.158551 2021] [wsgi:error] [pid 29554:tid 139899557402176] [remote 127.0.0.1:54804] ModuleNotFoundError: No module named 'website'
+127.0.0.1 - - [16/Oct/2021:13:23:21 +0200] "GET / HTTP/1.1" 500 809 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+[Sat Oct 16 13:27:15.680148 2021] [wsgi:error] [pid 29554:tid 139899674900032] [remote 127.0.0.1:54860] mod_wsgi (pid=29554): Failed to exec Python script file '/home/imjaimeortiz/Django_website/website-project/website/wsgi.py'.
+[Sat Oct 16 13:27:15.680194 2021] [wsgi:error] [pid 29554:tid 139899674900032] [remote 127.0.0.1:54860] mod_wsgi (pid=29554): Exception occurred processing WSGI script '/home/imjaimeortiz/Django_website/website-project/website/wsgi.py'.
+[Sat Oct 16 13:27:15.680324 2021] [wsgi:error] [pid 29554:tid 139899674900032] [remote 127.0.0.1:54860] Traceback (most recent call last):
+[Sat Oct 16 13:27:15.680370 2021] [wsgi:error] [pid 29554:tid 139899674900032] [remote 127.0.0.1:54860]   File "/home/imjaimeortiz/Django_website/website-project/website/wsgi.py", line 24, in <module>
+[Sat Oct 16 13:27:15.680377 2021] [wsgi:error] [pid 29554:tid 139899674900032] [remote 127.0.0.1:54860]     application = get_wsgi_application()
+[Sat Oct 16 13:27:15.680389 2021] [wsgi:error] [pid 29554:tid 139899674900032] [remote 127.0.0.1:54860]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+[Sat Oct 16 13:27:15.680395 2021] [wsgi:error] [pid 29554:tid 139899674900032] [remote 127.0.0.1:54860]     django.setup(set_prefix=False)
+[Sat Oct 16 13:27:15.680406 2021] [wsgi:error] [pid 29554:tid 139899674900032] [remote 127.0.0.1:54860]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/__init__.py", line 19, in setup
+[Sat Oct 16 13:27:15.680411 2021] [wsgi:error] [pid 29554:tid 139899674900032] [remote 127.0.0.1:54860]     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+[Sat Oct 16 13:27:15.680423 2021] [wsgi:error] [pid 29554:tid 139899674900032] [remote 127.0.0.1:54860]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/conf/__init__.py", line 82, in __getattr__
+[Sat Oct 16 13:27:15.680429 2021] [wsgi:error] [pid 29554:tid 139899674900032] [remote 127.0.0.1:54860]     self._setup(name)
+[Sat Oct 16 13:27:15.680439 2021] [wsgi:error] [pid 29554:tid 139899674900032] [remote 127.0.0.1:54860]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/conf/__init__.py", line 69, in _setup
+[Sat Oct 16 13:27:15.680444 2021] [wsgi:error] [pid 29554:tid 139899674900032] [remote 127.0.0.1:54860]     self._wrapped = Settings(settings_module)
+[Sat Oct 16 13:27:15.680456 2021] [wsgi:error] [pid 29554:tid 139899674900032] [remote 127.0.0.1:54860]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/conf/__init__.py", line 170, in __init__
+[Sat Oct 16 13:27:15.680461 2021] [wsgi:error] [pid 29554:tid 139899674900032] [remote 127.0.0.1:54860]     mod = importlib.import_module(self.SETTINGS_MODULE)
+[Sat Oct 16 13:27:15.680472 2021] [wsgi:error] [pid 29554:tid 139899674900032] [remote 127.0.0.1:54860]   File "/usr/lib/python3.9/importlib/__init__.py", line 127, in import_module
+[Sat Oct 16 13:27:15.680478 2021] [wsgi:error] [pid 29554:tid 139899674900032] [remote 127.0.0.1:54860]     return _bootstrap._gcd_import(name[level:], package, level)
+[Sat Oct 16 13:27:15.680497 2021] [wsgi:error] [pid 29554:tid 139899674900032] [remote 127.0.0.1:54860]   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+[Sat Oct 16 13:27:15.680508 2021] [wsgi:error] [pid 29554:tid 139899674900032] [remote 127.0.0.1:54860]   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+[Sat Oct 16 13:27:15.680518 2021] [wsgi:error] [pid 29554:tid 139899674900032] [remote 127.0.0.1:54860]   File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+[Sat Oct 16 13:27:15.680529 2021] [wsgi:error] [pid 29554:tid 139899674900032] [remote 127.0.0.1:54860]   File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+[Sat Oct 16 13:27:15.680539 2021] [wsgi:error] [pid 29554:tid 139899674900032] [remote 127.0.0.1:54860]   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+[Sat Oct 16 13:27:15.680549 2021] [wsgi:error] [pid 29554:tid 139899674900032] [remote 127.0.0.1:54860]   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+[Sat Oct 16 13:27:15.680560 2021] [wsgi:error] [pid 29554:tid 139899674900032] [remote 127.0.0.1:54860]   File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+[Sat Oct 16 13:27:15.680578 2021] [wsgi:error] [pid 29554:tid 139899674900032] [remote 127.0.0.1:54860] ModuleNotFoundError: No module named 'website'
+127.0.0.1 - - [16/Oct/2021:13:27:15 +0200] "GET / HTTP/1.1" 500 809 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+[Sat Oct 16 13:42:45.776021 2021] [wsgi:error] [pid 29554:tid 139899557402176] [remote 127.0.0.1:55100] mod_wsgi (pid=29554): Failed to exec Python script file '/home/imjaimeortiz/Django_website/website-project/website/wsgi.py'.
+[Sat Oct 16 13:42:45.776063 2021] [wsgi:error] [pid 29554:tid 139899557402176] [remote 127.0.0.1:55100] mod_wsgi (pid=29554): Exception occurred processing WSGI script '/home/imjaimeortiz/Django_website/website-project/website/wsgi.py'.
+[Sat Oct 16 13:42:45.776264 2021] [wsgi:error] [pid 29554:tid 139899557402176] [remote 127.0.0.1:55100] Traceback (most recent call last):
+[Sat Oct 16 13:42:45.776309 2021] [wsgi:error] [pid 29554:tid 139899557402176] [remote 127.0.0.1:55100]   File "/home/imjaimeortiz/Django_website/website-project/website/wsgi.py", line 16, in <module>
+[Sat Oct 16 13:42:45.776315 2021] [wsgi:error] [pid 29554:tid 139899557402176] [remote 127.0.0.1:55100]     application = get_wsgi_application()
+[Sat Oct 16 13:42:45.776321 2021] [wsgi:error] [pid 29554:tid 139899557402176] [remote 127.0.0.1:55100]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+[Sat Oct 16 13:42:45.776325 2021] [wsgi:error] [pid 29554:tid 139899557402176] [remote 127.0.0.1:55100]     django.setup(set_prefix=False)
+[Sat Oct 16 13:42:45.776331 2021] [wsgi:error] [pid 29554:tid 139899557402176] [remote 127.0.0.1:55100]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/__init__.py", line 19, in setup
+[Sat Oct 16 13:42:45.776336 2021] [wsgi:error] [pid 29554:tid 139899557402176] [remote 127.0.0.1:55100]     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+[Sat Oct 16 13:42:45.776343 2021] [wsgi:error] [pid 29554:tid 139899557402176] [remote 127.0.0.1:55100]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/conf/__init__.py", line 82, in __getattr__
+[Sat Oct 16 13:42:45.776347 2021] [wsgi:error] [pid 29554:tid 139899557402176] [remote 127.0.0.1:55100]     self._setup(name)
+[Sat Oct 16 13:42:45.776353 2021] [wsgi:error] [pid 29554:tid 139899557402176] [remote 127.0.0.1:55100]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/conf/__init__.py", line 69, in _setup
+[Sat Oct 16 13:42:45.776357 2021] [wsgi:error] [pid 29554:tid 139899557402176] [remote 127.0.0.1:55100]     self._wrapped = Settings(settings_module)
+[Sat Oct 16 13:42:45.776363 2021] [wsgi:error] [pid 29554:tid 139899557402176] [remote 127.0.0.1:55100]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/conf/__init__.py", line 170, in __init__
+[Sat Oct 16 13:42:45.776374 2021] [wsgi:error] [pid 29554:tid 139899557402176] [remote 127.0.0.1:55100]     mod = importlib.import_module(self.SETTINGS_MODULE)
+[Sat Oct 16 13:42:45.776451 2021] [wsgi:error] [pid 29554:tid 139899557402176] [remote 127.0.0.1:55100]   File "/usr/lib/python3.9/importlib/__init__.py", line 127, in import_module
+[Sat Oct 16 13:42:45.776461 2021] [wsgi:error] [pid 29554:tid 139899557402176] [remote 127.0.0.1:55100]     return _bootstrap._gcd_import(name[level:], package, level)
+[Sat Oct 16 13:42:45.776470 2021] [wsgi:error] [pid 29554:tid 139899557402176] [remote 127.0.0.1:55100]   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+[Sat Oct 16 13:42:45.776477 2021] [wsgi:error] [pid 29554:tid 139899557402176] [remote 127.0.0.1:55100]   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+[Sat Oct 16 13:42:45.776483 2021] [wsgi:error] [pid 29554:tid 139899557402176] [remote 127.0.0.1:55100]   File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+[Sat Oct 16 13:42:45.776490 2021] [wsgi:error] [pid 29554:tid 139899557402176] [remote 127.0.0.1:55100]   File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+[Sat Oct 16 13:42:45.776495 2021] [wsgi:error] [pid 29554:tid 139899557402176] [remote 127.0.0.1:55100]   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+[Sat Oct 16 13:42:45.776502 2021] [wsgi:error] [pid 29554:tid 139899557402176] [remote 127.0.0.1:55100]   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+[Sat Oct 16 13:42:45.776510 2021] [wsgi:error] [pid 29554:tid 139899557402176] [remote 127.0.0.1:55100]   File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+[Sat Oct 16 13:42:45.776524 2021] [wsgi:error] [pid 29554:tid 139899557402176] [remote 127.0.0.1:55100] ModuleNotFoundError: No module named 'website'
+127.0.0.1 - - [16/Oct/2021:13:42:45 +0200] "GET / HTTP/1.1" 500 809 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+[Sat Oct 16 13:46:59.861164 2021] [wsgi:error] [pid 29554:tid 139899674900032] [remote 127.0.0.1:55148] mod_wsgi (pid=29554): Failed to exec Python script file '/home/imjaimeortiz/Django_website/website-project/website/wsgi.py'.
+[Sat Oct 16 13:46:59.861210 2021] [wsgi:error] [pid 29554:tid 139899674900032] [remote 127.0.0.1:55148] mod_wsgi (pid=29554): Exception occurred processing WSGI script '/home/imjaimeortiz/Django_website/website-project/website/wsgi.py'.
+[Sat Oct 16 13:46:59.861344 2021] [wsgi:error] [pid 29554:tid 139899674900032] [remote 127.0.0.1:55148] Traceback (most recent call last):
+[Sat Oct 16 13:46:59.861391 2021] [wsgi:error] [pid 29554:tid 139899674900032] [remote 127.0.0.1:55148]   File "/home/imjaimeortiz/Django_website/website-project/website/wsgi.py", line 16, in <module>
+[Sat Oct 16 13:46:59.861399 2021] [wsgi:error] [pid 29554:tid 139899674900032] [remote 127.0.0.1:55148]     application = get_wsgi_application()
+[Sat Oct 16 13:46:59.861410 2021] [wsgi:error] [pid 29554:tid 139899674900032] [remote 127.0.0.1:55148]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+[Sat Oct 16 13:46:59.861416 2021] [wsgi:error] [pid 29554:tid 139899674900032] [remote 127.0.0.1:55148]     django.setup(set_prefix=False)
+[Sat Oct 16 13:46:59.861428 2021] [wsgi:error] [pid 29554:tid 139899674900032] [remote 127.0.0.1:55148]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/__init__.py", line 19, in setup
+[Sat Oct 16 13:46:59.861434 2021] [wsgi:error] [pid 29554:tid 139899674900032] [remote 127.0.0.1:55148]     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+[Sat Oct 16 13:46:59.861445 2021] [wsgi:error] [pid 29554:tid 139899674900032] [remote 127.0.0.1:55148]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/conf/__init__.py", line 82, in __getattr__
+[Sat Oct 16 13:46:59.861459 2021] [wsgi:error] [pid 29554:tid 139899674900032] [remote 127.0.0.1:55148]     self._setup(name)
+[Sat Oct 16 13:46:59.861471 2021] [wsgi:error] [pid 29554:tid 139899674900032] [remote 127.0.0.1:55148]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/conf/__init__.py", line 69, in _setup
+[Sat Oct 16 13:46:59.861476 2021] [wsgi:error] [pid 29554:tid 139899674900032] [remote 127.0.0.1:55148]     self._wrapped = Settings(settings_module)
+[Sat Oct 16 13:46:59.861486 2021] [wsgi:error] [pid 29554:tid 139899674900032] [remote 127.0.0.1:55148]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/conf/__init__.py", line 170, in __init__
+[Sat Oct 16 13:46:59.861492 2021] [wsgi:error] [pid 29554:tid 139899674900032] [remote 127.0.0.1:55148]     mod = importlib.import_module(self.SETTINGS_MODULE)
+[Sat Oct 16 13:46:59.861503 2021] [wsgi:error] [pid 29554:tid 139899674900032] [remote 127.0.0.1:55148]   File "/usr/lib/python3.9/importlib/__init__.py", line 127, in import_module
+[Sat Oct 16 13:46:59.861508 2021] [wsgi:error] [pid 29554:tid 139899674900032] [remote 127.0.0.1:55148]     return _bootstrap._gcd_import(name[level:], package, level)
+[Sat Oct 16 13:46:59.861518 2021] [wsgi:error] [pid 29554:tid 139899674900032] [remote 127.0.0.1:55148]   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+[Sat Oct 16 13:46:59.861529 2021] [wsgi:error] [pid 29554:tid 139899674900032] [remote 127.0.0.1:55148]   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+[Sat Oct 16 13:46:59.861539 2021] [wsgi:error] [pid 29554:tid 139899674900032] [remote 127.0.0.1:55148]   File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+[Sat Oct 16 13:46:59.861549 2021] [wsgi:error] [pid 29554:tid 139899674900032] [remote 127.0.0.1:55148]   File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+[Sat Oct 16 13:46:59.861560 2021] [wsgi:error] [pid 29554:tid 139899674900032] [remote 127.0.0.1:55148]   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+[Sat Oct 16 13:46:59.861571 2021] [wsgi:error] [pid 29554:tid 139899674900032] [remote 127.0.0.1:55148]   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+[Sat Oct 16 13:46:59.861581 2021] [wsgi:error] [pid 29554:tid 139899674900032] [remote 127.0.0.1:55148]   File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+[Sat Oct 16 13:46:59.861600 2021] [wsgi:error] [pid 29554:tid 139899674900032] [remote 127.0.0.1:55148] ModuleNotFoundError: No module named 'website'
+127.0.0.1 - - [16/Oct/2021:13:46:59 +0200] "GET / HTTP/1.1" 500 809 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+[Sat Oct 16 13:51:03.798204 2021] [wsgi:error] [pid 29554:tid 139899557402176] [remote 127.0.0.1:55194] mod_wsgi (pid=29554): Failed to exec Python script file '/home/imjaimeortiz/Django_website/website-project/website/wsgi.py'.
+[Sat Oct 16 13:51:03.798266 2021] [wsgi:error] [pid 29554:tid 139899557402176] [remote 127.0.0.1:55194] mod_wsgi (pid=29554): Exception occurred processing WSGI script '/home/imjaimeortiz/Django_website/website-project/website/wsgi.py'.
+[Sat Oct 16 13:51:03.798406 2021] [wsgi:error] [pid 29554:tid 139899557402176] [remote 127.0.0.1:55194] Traceback (most recent call last):
+[Sat Oct 16 13:51:03.798466 2021] [wsgi:error] [pid 29554:tid 139899557402176] [remote 127.0.0.1:55194]   File "/home/imjaimeortiz/Django_website/website-project/website/wsgi.py", line 16, in <module>
+[Sat Oct 16 13:51:03.798476 2021] [wsgi:error] [pid 29554:tid 139899557402176] [remote 127.0.0.1:55194]     application = get_wsgi_application()
+[Sat Oct 16 13:51:03.798488 2021] [wsgi:error] [pid 29554:tid 139899557402176] [remote 127.0.0.1:55194]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+[Sat Oct 16 13:51:03.798493 2021] [wsgi:error] [pid 29554:tid 139899557402176] [remote 127.0.0.1:55194]     django.setup(set_prefix=False)
+[Sat Oct 16 13:51:03.798500 2021] [wsgi:error] [pid 29554:tid 139899557402176] [remote 127.0.0.1:55194]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/__init__.py", line 19, in setup
+[Sat Oct 16 13:51:03.798512 2021] [wsgi:error] [pid 29554:tid 139899557402176] [remote 127.0.0.1:55194]     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+[Sat Oct 16 13:51:03.798520 2021] [wsgi:error] [pid 29554:tid 139899557402176] [remote 127.0.0.1:55194]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/conf/__init__.py", line 82, in __getattr__
+[Sat Oct 16 13:51:03.798526 2021] [wsgi:error] [pid 29554:tid 139899557402176] [remote 127.0.0.1:55194]     self._setup(name)
+[Sat Oct 16 13:51:03.798533 2021] [wsgi:error] [pid 29554:tid 139899557402176] [remote 127.0.0.1:55194]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/conf/__init__.py", line 69, in _setup
+[Sat Oct 16 13:51:03.798538 2021] [wsgi:error] [pid 29554:tid 139899557402176] [remote 127.0.0.1:55194]     self._wrapped = Settings(settings_module)
+[Sat Oct 16 13:51:03.798545 2021] [wsgi:error] [pid 29554:tid 139899557402176] [remote 127.0.0.1:55194]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/conf/__init__.py", line 170, in __init__
+[Sat Oct 16 13:51:03.798548 2021] [wsgi:error] [pid 29554:tid 139899557402176] [remote 127.0.0.1:55194]     mod = importlib.import_module(self.SETTINGS_MODULE)
+[Sat Oct 16 13:51:03.798555 2021] [wsgi:error] [pid 29554:tid 139899557402176] [remote 127.0.0.1:55194]   File "/usr/lib/python3.9/importlib/__init__.py", line 127, in import_module
+[Sat Oct 16 13:51:03.798558 2021] [wsgi:error] [pid 29554:tid 139899557402176] [remote 127.0.0.1:55194]     return _bootstrap._gcd_import(name[level:], package, level)
+[Sat Oct 16 13:51:03.798565 2021] [wsgi:error] [pid 29554:tid 139899557402176] [remote 127.0.0.1:55194]   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+[Sat Oct 16 13:51:03.798572 2021] [wsgi:error] [pid 29554:tid 139899557402176] [remote 127.0.0.1:55194]   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+[Sat Oct 16 13:51:03.798578 2021] [wsgi:error] [pid 29554:tid 139899557402176] [remote 127.0.0.1:55194]   File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+[Sat Oct 16 13:51:03.798585 2021] [wsgi:error] [pid 29554:tid 139899557402176] [remote 127.0.0.1:55194]   File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+[Sat Oct 16 13:51:03.798592 2021] [wsgi:error] [pid 29554:tid 139899557402176] [remote 127.0.0.1:55194]   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+[Sat Oct 16 13:51:03.798600 2021] [wsgi:error] [pid 29554:tid 139899557402176] [remote 127.0.0.1:55194]   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+[Sat Oct 16 13:51:03.798607 2021] [wsgi:error] [pid 29554:tid 139899557402176] [remote 127.0.0.1:55194]   File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+[Sat Oct 16 13:51:03.798624 2021] [wsgi:error] [pid 29554:tid 139899557402176] [remote 127.0.0.1:55194] ModuleNotFoundError: No module named 'website'
+127.0.0.1 - - [16/Oct/2021:13:51:03 +0200] "GET / HTTP/1.1" 500 809 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+[Sat Oct 16 13:58:03.457518 2021] [wsgi:error] [pid 30798:tid 140558403438144] [remote 127.0.0.1:55320] mod_wsgi (pid=30798): Failed to exec Python script file '/home/imjaimeortiz/Django_website/website-project/website/wsgi.py'.
+[Sat Oct 16 13:58:03.457582 2021] [wsgi:error] [pid 30798:tid 140558403438144] [remote 127.0.0.1:55320] mod_wsgi (pid=30798): Exception occurred processing WSGI script '/home/imjaimeortiz/Django_website/website-project/website/wsgi.py'.
+[Sat Oct 16 13:58:03.457942 2021] [wsgi:error] [pid 30798:tid 140558403438144] [remote 127.0.0.1:55320] Traceback (most recent call last):
+[Sat Oct 16 13:58:03.457990 2021] [wsgi:error] [pid 30798:tid 140558403438144] [remote 127.0.0.1:55320]   File "/home/imjaimeortiz/Django_website/website-project/website/wsgi.py", line 16, in <module>
+[Sat Oct 16 13:58:03.458004 2021] [wsgi:error] [pid 30798:tid 140558403438144] [remote 127.0.0.1:55320]     application = get_wsgi_application()
+[Sat Oct 16 13:58:03.458012 2021] [wsgi:error] [pid 30798:tid 140558403438144] [remote 127.0.0.1:55320]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+[Sat Oct 16 13:58:03.458016 2021] [wsgi:error] [pid 30798:tid 140558403438144] [remote 127.0.0.1:55320]     django.setup(set_prefix=False)
+[Sat Oct 16 13:58:03.458021 2021] [wsgi:error] [pid 30798:tid 140558403438144] [remote 127.0.0.1:55320]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/__init__.py", line 19, in setup
+[Sat Oct 16 13:58:03.458024 2021] [wsgi:error] [pid 30798:tid 140558403438144] [remote 127.0.0.1:55320]     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+[Sat Oct 16 13:58:03.458029 2021] [wsgi:error] [pid 30798:tid 140558403438144] [remote 127.0.0.1:55320]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/conf/__init__.py", line 82, in __getattr__
+[Sat Oct 16 13:58:03.458033 2021] [wsgi:error] [pid 30798:tid 140558403438144] [remote 127.0.0.1:55320]     self._setup(name)
+[Sat Oct 16 13:58:03.458038 2021] [wsgi:error] [pid 30798:tid 140558403438144] [remote 127.0.0.1:55320]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/conf/__init__.py", line 69, in _setup
+[Sat Oct 16 13:58:03.458041 2021] [wsgi:error] [pid 30798:tid 140558403438144] [remote 127.0.0.1:55320]     self._wrapped = Settings(settings_module)
+[Sat Oct 16 13:58:03.458046 2021] [wsgi:error] [pid 30798:tid 140558403438144] [remote 127.0.0.1:55320]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/conf/__init__.py", line 170, in __init__
+[Sat Oct 16 13:58:03.458050 2021] [wsgi:error] [pid 30798:tid 140558403438144] [remote 127.0.0.1:55320]     mod = importlib.import_module(self.SETTINGS_MODULE)
+[Sat Oct 16 13:58:03.458055 2021] [wsgi:error] [pid 30798:tid 140558403438144] [remote 127.0.0.1:55320]   File "/usr/lib/python3.9/importlib/__init__.py", line 127, in import_module
+[Sat Oct 16 13:58:03.458058 2021] [wsgi:error] [pid 30798:tid 140558403438144] [remote 127.0.0.1:55320]     return _bootstrap._gcd_import(name[level:], package, level)
+[Sat Oct 16 13:58:03.458063 2021] [wsgi:error] [pid 30798:tid 140558403438144] [remote 127.0.0.1:55320]   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+[Sat Oct 16 13:58:03.458069 2021] [wsgi:error] [pid 30798:tid 140558403438144] [remote 127.0.0.1:55320]   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+[Sat Oct 16 13:58:03.458074 2021] [wsgi:error] [pid 30798:tid 140558403438144] [remote 127.0.0.1:55320]   File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+[Sat Oct 16 13:58:03.458080 2021] [wsgi:error] [pid 30798:tid 140558403438144] [remote 127.0.0.1:55320]   File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+[Sat Oct 16 13:58:03.458086 2021] [wsgi:error] [pid 30798:tid 140558403438144] [remote 127.0.0.1:55320]   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+[Sat Oct 16 13:58:03.458092 2021] [wsgi:error] [pid 30798:tid 140558403438144] [remote 127.0.0.1:55320]   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+[Sat Oct 16 13:58:03.458097 2021] [wsgi:error] [pid 30798:tid 140558403438144] [remote 127.0.0.1:55320]   File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+[Sat Oct 16 13:58:03.458123 2021] [wsgi:error] [pid 30798:tid 140558403438144] [remote 127.0.0.1:55320] ModuleNotFoundError: No module named 'website'
+127.0.0.1 - - [16/Oct/2021:13:58:03 +0200] "GET / HTTP/1.1" 500 809 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+[Sat Oct 16 16:33:51.603880 2021] [wsgi:error] [pid 979:tid 140630896117312] [remote 127.0.0.1:34412] mod_wsgi (pid=979): Failed to exec Python script file '/home/imjaimeortiz/Django_website/website-project/website/wsgi.py'.
+[Sat Oct 16 16:33:51.606679 2021] [wsgi:error] [pid 979:tid 140630896117312] [remote 127.0.0.1:34412] mod_wsgi (pid=979): Exception occurred processing WSGI script '/home/imjaimeortiz/Django_website/website-project/website/wsgi.py'.
+[Sat Oct 16 16:33:51.607673 2021] [wsgi:error] [pid 979:tid 140630896117312] [remote 127.0.0.1:34412] Traceback (most recent call last):
+[Sat Oct 16 16:33:51.607743 2021] [wsgi:error] [pid 979:tid 140630896117312] [remote 127.0.0.1:34412]   File "/home/imjaimeortiz/Django_website/website-project/website/wsgi.py", line 16, in <module>
+[Sat Oct 16 16:33:51.607753 2021] [wsgi:error] [pid 979:tid 140630896117312] [remote 127.0.0.1:34412]     application = get_wsgi_application()
+[Sat Oct 16 16:33:51.607763 2021] [wsgi:error] [pid 979:tid 140630896117312] [remote 127.0.0.1:34412]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+[Sat Oct 16 16:33:51.607767 2021] [wsgi:error] [pid 979:tid 140630896117312] [remote 127.0.0.1:34412]     django.setup(set_prefix=False)
+[Sat Oct 16 16:33:51.607775 2021] [wsgi:error] [pid 979:tid 140630896117312] [remote 127.0.0.1:34412]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/__init__.py", line 19, in setup
+[Sat Oct 16 16:33:51.607779 2021] [wsgi:error] [pid 979:tid 140630896117312] [remote 127.0.0.1:34412]     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+[Sat Oct 16 16:33:51.607787 2021] [wsgi:error] [pid 979:tid 140630896117312] [remote 127.0.0.1:34412]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/conf/__init__.py", line 82, in __getattr__
+[Sat Oct 16 16:33:51.607791 2021] [wsgi:error] [pid 979:tid 140630896117312] [remote 127.0.0.1:34412]     self._setup(name)
+[Sat Oct 16 16:33:51.607798 2021] [wsgi:error] [pid 979:tid 140630896117312] [remote 127.0.0.1:34412]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/conf/__init__.py", line 69, in _setup
+[Sat Oct 16 16:33:51.607802 2021] [wsgi:error] [pid 979:tid 140630896117312] [remote 127.0.0.1:34412]     self._wrapped = Settings(settings_module)
+[Sat Oct 16 16:33:51.607811 2021] [wsgi:error] [pid 979:tid 140630896117312] [remote 127.0.0.1:34412]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/conf/__init__.py", line 170, in __init__
+[Sat Oct 16 16:33:51.607817 2021] [wsgi:error] [pid 979:tid 140630896117312] [remote 127.0.0.1:34412]     mod = importlib.import_module(self.SETTINGS_MODULE)
+[Sat Oct 16 16:33:51.607824 2021] [wsgi:error] [pid 979:tid 140630896117312] [remote 127.0.0.1:34412]   File "/usr/lib/python3.9/importlib/__init__.py", line 127, in import_module
+[Sat Oct 16 16:33:51.607830 2021] [wsgi:error] [pid 979:tid 140630896117312] [remote 127.0.0.1:34412]     return _bootstrap._gcd_import(name[level:], package, level)
+[Sat Oct 16 16:33:51.607838 2021] [wsgi:error] [pid 979:tid 140630896117312] [remote 127.0.0.1:34412]   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+[Sat Oct 16 16:33:51.607847 2021] [wsgi:error] [pid 979:tid 140630896117312] [remote 127.0.0.1:34412]   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+[Sat Oct 16 16:33:51.607857 2021] [wsgi:error] [pid 979:tid 140630896117312] [remote 127.0.0.1:34412]   File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+[Sat Oct 16 16:33:51.607865 2021] [wsgi:error] [pid 979:tid 140630896117312] [remote 127.0.0.1:34412]   File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+[Sat Oct 16 16:33:51.607874 2021] [wsgi:error] [pid 979:tid 140630896117312] [remote 127.0.0.1:34412]   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+[Sat Oct 16 16:33:51.607882 2021] [wsgi:error] [pid 979:tid 140630896117312] [remote 127.0.0.1:34412]   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+[Sat Oct 16 16:33:51.607891 2021] [wsgi:error] [pid 979:tid 140630896117312] [remote 127.0.0.1:34412]   File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+[Sat Oct 16 16:33:51.607917 2021] [wsgi:error] [pid 979:tid 140630896117312] [remote 127.0.0.1:34412] ModuleNotFoundError: No module named 'website'
+127.0.0.1 - - [16/Oct/2021:16:33:51 +0200] "GET / HTTP/1.1" 500 809 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+[Sat Oct 16 16:52:53.130229 2021] [wsgi:error] [pid 979:tid 140630921295424] [remote 127.0.0.1:34932] mod_wsgi (pid=979): Failed to exec Python script file '/home/imjaimeortiz/Django_website/website-project/website/wsgi.py'.
+[Sat Oct 16 16:52:53.130451 2021] [wsgi:error] [pid 979:tid 140630921295424] [remote 127.0.0.1:34932] mod_wsgi (pid=979): Exception occurred processing WSGI script '/home/imjaimeortiz/Django_website/website-project/website/wsgi.py'.
+[Sat Oct 16 16:52:53.131458 2021] [wsgi:error] [pid 979:tid 140630921295424] [remote 127.0.0.1:34932] Traceback (most recent call last):
+[Sat Oct 16 16:52:53.131755 2021] [wsgi:error] [pid 979:tid 140630921295424] [remote 127.0.0.1:34932]   File "/home/imjaimeortiz/Django_website/website-project/website/wsgi.py", line 16, in <module>
+[Sat Oct 16 16:52:53.131803 2021] [wsgi:error] [pid 979:tid 140630921295424] [remote 127.0.0.1:34932]     application = get_wsgi_application()
+[Sat Oct 16 16:52:53.131859 2021] [wsgi:error] [pid 979:tid 140630921295424] [remote 127.0.0.1:34932]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+[Sat Oct 16 16:52:53.132089 2021] [wsgi:error] [pid 979:tid 140630921295424] [remote 127.0.0.1:34932]     django.setup(set_prefix=False)
+[Sat Oct 16 16:52:53.132166 2021] [wsgi:error] [pid 979:tid 140630921295424] [remote 127.0.0.1:34932]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/__init__.py", line 19, in setup
+[Sat Oct 16 16:52:53.132199 2021] [wsgi:error] [pid 979:tid 140630921295424] [remote 127.0.0.1:34932]     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+[Sat Oct 16 16:52:53.132250 2021] [wsgi:error] [pid 979:tid 140630921295424] [remote 127.0.0.1:34932]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/conf/__init__.py", line 82, in __getattr__
+[Sat Oct 16 16:52:53.132283 2021] [wsgi:error] [pid 979:tid 140630921295424] [remote 127.0.0.1:34932]     self._setup(name)
+[Sat Oct 16 16:52:53.132331 2021] [wsgi:error] [pid 979:tid 140630921295424] [remote 127.0.0.1:34932]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/conf/__init__.py", line 69, in _setup
+[Sat Oct 16 16:52:53.132366 2021] [wsgi:error] [pid 979:tid 140630921295424] [remote 127.0.0.1:34932]     self._wrapped = Settings(settings_module)
+[Sat Oct 16 16:52:53.132413 2021] [wsgi:error] [pid 979:tid 140630921295424] [remote 127.0.0.1:34932]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/conf/__init__.py", line 170, in __init__
+[Sat Oct 16 16:52:53.132446 2021] [wsgi:error] [pid 979:tid 140630921295424] [remote 127.0.0.1:34932]     mod = importlib.import_module(self.SETTINGS_MODULE)
+[Sat Oct 16 16:52:53.132495 2021] [wsgi:error] [pid 979:tid 140630921295424] [remote 127.0.0.1:34932]   File "/usr/lib/python3.9/importlib/__init__.py", line 127, in import_module
+[Sat Oct 16 16:52:53.132526 2021] [wsgi:error] [pid 979:tid 140630921295424] [remote 127.0.0.1:34932]     return _bootstrap._gcd_import(name[level:], package, level)
+[Sat Oct 16 16:52:53.132576 2021] [wsgi:error] [pid 979:tid 140630921295424] [remote 127.0.0.1:34932]   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+[Sat Oct 16 16:52:53.132638 2021] [wsgi:error] [pid 979:tid 140630921295424] [remote 127.0.0.1:34932]   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+[Sat Oct 16 16:52:53.132698 2021] [wsgi:error] [pid 979:tid 140630921295424] [remote 127.0.0.1:34932]   File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+[Sat Oct 16 16:52:53.132757 2021] [wsgi:error] [pid 979:tid 140630921295424] [remote 127.0.0.1:34932]   File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+[Sat Oct 16 16:52:53.132812 2021] [wsgi:error] [pid 979:tid 140630921295424] [remote 127.0.0.1:34932]   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+[Sat Oct 16 16:52:53.132923 2021] [wsgi:error] [pid 979:tid 140630921295424] [remote 127.0.0.1:34932]   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+[Sat Oct 16 16:52:53.132983 2021] [wsgi:error] [pid 979:tid 140630921295424] [remote 127.0.0.1:34932]   File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+[Sat Oct 16 16:52:53.133261 2021] [wsgi:error] [pid 979:tid 140630921295424] [remote 127.0.0.1:34932] ModuleNotFoundError: No module named 'website'
+127.0.0.1 - - [16/Oct/2021:16:52:53 +0200] "GET / HTTP/1.1" 500 809 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+[Sat Oct 16 16:54:43.410812 2021] [wsgi:error] [pid 5495:tid 140680419427904] [remote 127.0.0.1:34942] mod_wsgi (pid=5495): Failed to exec Python script file '/home/imjaimeortiz/Django_website/website-project/website/wsgi.py'.
+[Sat Oct 16 16:54:43.410881 2021] [wsgi:error] [pid 5495:tid 140680419427904] [remote 127.0.0.1:34942] mod_wsgi (pid=5495): Exception occurred processing WSGI script '/home/imjaimeortiz/Django_website/website-project/website/wsgi.py'.
+[Sat Oct 16 16:54:43.411497 2021] [wsgi:error] [pid 5495:tid 140680419427904] [remote 127.0.0.1:34942] Traceback (most recent call last):
+[Sat Oct 16 16:54:43.411571 2021] [wsgi:error] [pid 5495:tid 140680419427904] [remote 127.0.0.1:34942]   File "/home/imjaimeortiz/Django_website/website-project/website/wsgi.py", line 16, in <module>
+[Sat Oct 16 16:54:43.411582 2021] [wsgi:error] [pid 5495:tid 140680419427904] [remote 127.0.0.1:34942]     application = get_wsgi_application()
+[Sat Oct 16 16:54:43.411593 2021] [wsgi:error] [pid 5495:tid 140680419427904] [remote 127.0.0.1:34942]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+[Sat Oct 16 16:54:43.411598 2021] [wsgi:error] [pid 5495:tid 140680419427904] [remote 127.0.0.1:34942]     django.setup(set_prefix=False)
+[Sat Oct 16 16:54:43.411606 2021] [wsgi:error] [pid 5495:tid 140680419427904] [remote 127.0.0.1:34942]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/__init__.py", line 19, in setup
+[Sat Oct 16 16:54:43.411611 2021] [wsgi:error] [pid 5495:tid 140680419427904] [remote 127.0.0.1:34942]     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+[Sat Oct 16 16:54:43.411619 2021] [wsgi:error] [pid 5495:tid 140680419427904] [remote 127.0.0.1:34942]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/conf/__init__.py", line 82, in __getattr__
+[Sat Oct 16 16:54:43.411624 2021] [wsgi:error] [pid 5495:tid 140680419427904] [remote 127.0.0.1:34942]     self._setup(name)
+[Sat Oct 16 16:54:43.411632 2021] [wsgi:error] [pid 5495:tid 140680419427904] [remote 127.0.0.1:34942]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/conf/__init__.py", line 69, in _setup
+[Sat Oct 16 16:54:43.411639 2021] [wsgi:error] [pid 5495:tid 140680419427904] [remote 127.0.0.1:34942]     self._wrapped = Settings(settings_module)
+[Sat Oct 16 16:54:43.411647 2021] [wsgi:error] [pid 5495:tid 140680419427904] [remote 127.0.0.1:34942]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/conf/__init__.py", line 170, in __init__
+[Sat Oct 16 16:54:43.411653 2021] [wsgi:error] [pid 5495:tid 140680419427904] [remote 127.0.0.1:34942]     mod = importlib.import_module(self.SETTINGS_MODULE)
+[Sat Oct 16 16:54:43.411661 2021] [wsgi:error] [pid 5495:tid 140680419427904] [remote 127.0.0.1:34942]   File "/usr/lib/python3.9/importlib/__init__.py", line 127, in import_module
+[Sat Oct 16 16:54:43.411666 2021] [wsgi:error] [pid 5495:tid 140680419427904] [remote 127.0.0.1:34942]     return _bootstrap._gcd_import(name[level:], package, level)
+[Sat Oct 16 16:54:43.411674 2021] [wsgi:error] [pid 5495:tid 140680419427904] [remote 127.0.0.1:34942]   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+[Sat Oct 16 16:54:43.411682 2021] [wsgi:error] [pid 5495:tid 140680419427904] [remote 127.0.0.1:34942]   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+[Sat Oct 16 16:54:43.411702 2021] [wsgi:error] [pid 5495:tid 140680419427904] [remote 127.0.0.1:34942]   File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+[Sat Oct 16 16:54:43.411711 2021] [wsgi:error] [pid 5495:tid 140680419427904] [remote 127.0.0.1:34942]   File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+[Sat Oct 16 16:54:43.411721 2021] [wsgi:error] [pid 5495:tid 140680419427904] [remote 127.0.0.1:34942]   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+[Sat Oct 16 16:54:43.411730 2021] [wsgi:error] [pid 5495:tid 140680419427904] [remote 127.0.0.1:34942]   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+[Sat Oct 16 16:54:43.411740 2021] [wsgi:error] [pid 5495:tid 140680419427904] [remote 127.0.0.1:34942]   File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+[Sat Oct 16 16:54:43.411760 2021] [wsgi:error] [pid 5495:tid 140680419427904] [remote 127.0.0.1:34942] ModuleNotFoundError: No module named 'website'
+127.0.0.1 - - [16/Oct/2021:16:54:43 +0200] "GET / HTTP/1.1" 500 809 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+[Sat Oct 16 16:57:57.662261 2021] [wsgi:error] [pid 5495:tid 140680301930048] [remote 127.0.0.1:34996] mod_wsgi (pid=5495): Failed to exec Python script file '/home/imjaimeortiz/Django_website/website-project/website/wsgi.py'.
+[Sat Oct 16 16:57:57.662433 2021] [wsgi:error] [pid 5495:tid 140680301930048] [remote 127.0.0.1:34996] mod_wsgi (pid=5495): Exception occurred processing WSGI script '/home/imjaimeortiz/Django_website/website-project/website/wsgi.py'.
+[Sat Oct 16 16:57:57.662905 2021] [wsgi:error] [pid 5495:tid 140680301930048] [remote 127.0.0.1:34996] Traceback (most recent call last):
+[Sat Oct 16 16:57:57.663090 2021] [wsgi:error] [pid 5495:tid 140680301930048] [remote 127.0.0.1:34996]   File "/home/imjaimeortiz/Django_website/website-project/website/wsgi.py", line 16, in <module>
+[Sat Oct 16 16:57:57.663119 2021] [wsgi:error] [pid 5495:tid 140680301930048] [remote 127.0.0.1:34996]     application = get_wsgi_application()
+[Sat Oct 16 16:57:57.663197 2021] [wsgi:error] [pid 5495:tid 140680301930048] [remote 127.0.0.1:34996]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+[Sat Oct 16 16:57:57.663229 2021] [wsgi:error] [pid 5495:tid 140680301930048] [remote 127.0.0.1:34996]     django.setup(set_prefix=False)
+[Sat Oct 16 16:57:57.663260 2021] [wsgi:error] [pid 5495:tid 140680301930048] [remote 127.0.0.1:34996]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/__init__.py", line 19, in setup
+[Sat Oct 16 16:57:57.663279 2021] [wsgi:error] [pid 5495:tid 140680301930048] [remote 127.0.0.1:34996]     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+[Sat Oct 16 16:57:57.663304 2021] [wsgi:error] [pid 5495:tid 140680301930048] [remote 127.0.0.1:34996]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/conf/__init__.py", line 82, in __getattr__
+[Sat Oct 16 16:57:57.663325 2021] [wsgi:error] [pid 5495:tid 140680301930048] [remote 127.0.0.1:34996]     self._setup(name)
+[Sat Oct 16 16:57:57.663352 2021] [wsgi:error] [pid 5495:tid 140680301930048] [remote 127.0.0.1:34996]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/conf/__init__.py", line 69, in _setup
+[Sat Oct 16 16:57:57.663365 2021] [wsgi:error] [pid 5495:tid 140680301930048] [remote 127.0.0.1:34996]     self._wrapped = Settings(settings_module)
+[Sat Oct 16 16:57:57.663391 2021] [wsgi:error] [pid 5495:tid 140680301930048] [remote 127.0.0.1:34996]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/conf/__init__.py", line 170, in __init__
+[Sat Oct 16 16:57:57.663409 2021] [wsgi:error] [pid 5495:tid 140680301930048] [remote 127.0.0.1:34996]     mod = importlib.import_module(self.SETTINGS_MODULE)
+[Sat Oct 16 16:57:57.663433 2021] [wsgi:error] [pid 5495:tid 140680301930048] [remote 127.0.0.1:34996]   File "/usr/lib/python3.9/importlib/__init__.py", line 127, in import_module
+[Sat Oct 16 16:57:57.663496 2021] [wsgi:error] [pid 5495:tid 140680301930048] [remote 127.0.0.1:34996]     return _bootstrap._gcd_import(name[level:], package, level)
+[Sat Oct 16 16:57:57.663527 2021] [wsgi:error] [pid 5495:tid 140680301930048] [remote 127.0.0.1:34996]   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+[Sat Oct 16 16:57:57.663555 2021] [wsgi:error] [pid 5495:tid 140680301930048] [remote 127.0.0.1:34996]   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+[Sat Oct 16 16:57:57.663580 2021] [wsgi:error] [pid 5495:tid 140680301930048] [remote 127.0.0.1:34996]   File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+[Sat Oct 16 16:57:57.663610 2021] [wsgi:error] [pid 5495:tid 140680301930048] [remote 127.0.0.1:34996]   File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+[Sat Oct 16 16:57:57.663634 2021] [wsgi:error] [pid 5495:tid 140680301930048] [remote 127.0.0.1:34996]   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+[Sat Oct 16 16:57:57.663660 2021] [wsgi:error] [pid 5495:tid 140680301930048] [remote 127.0.0.1:34996]   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+[Sat Oct 16 16:57:57.663683 2021] [wsgi:error] [pid 5495:tid 140680301930048] [remote 127.0.0.1:34996]   File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+[Sat Oct 16 16:57:57.663748 2021] [wsgi:error] [pid 5495:tid 140680301930048] [remote 127.0.0.1:34996] ModuleNotFoundError: No module named 'website'
+127.0.0.1 - - [16/Oct/2021:16:57:57 +0200] "GET / HTTP/1.1" 500 809 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+[Sat Oct 16 17:08:41.868943 2021] [wsgi:error] [pid 5495:tid 140680419427904] [remote 127.0.0.1:35484] mod_wsgi (pid=5495): Failed to exec Python script file '/home/imjaimeortiz/Django_website/website-project/website/wsgi.py'.
+[Sat Oct 16 17:08:41.869138 2021] [wsgi:error] [pid 5495:tid 140680419427904] [remote 127.0.0.1:35484] mod_wsgi (pid=5495): Exception occurred processing WSGI script '/home/imjaimeortiz/Django_website/website-project/website/wsgi.py'.
+[Sat Oct 16 17:08:41.870220 2021] [wsgi:error] [pid 5495:tid 140680419427904] [remote 127.0.0.1:35484] Traceback (most recent call last):
+[Sat Oct 16 17:08:41.870520 2021] [wsgi:error] [pid 5495:tid 140680419427904] [remote 127.0.0.1:35484]   File "/home/imjaimeortiz/Django_website/website-project/website/wsgi.py", line 16, in <module>
+[Sat Oct 16 17:08:41.870568 2021] [wsgi:error] [pid 5495:tid 140680419427904] [remote 127.0.0.1:35484]     application = get_wsgi_application()
+[Sat Oct 16 17:08:41.870623 2021] [wsgi:error] [pid 5495:tid 140680419427904] [remote 127.0.0.1:35484]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+[Sat Oct 16 17:08:41.870652 2021] [wsgi:error] [pid 5495:tid 140680419427904] [remote 127.0.0.1:35484]     django.setup(set_prefix=False)
+[Sat Oct 16 17:08:41.870694 2021] [wsgi:error] [pid 5495:tid 140680419427904] [remote 127.0.0.1:35484]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/__init__.py", line 19, in setup
+[Sat Oct 16 17:08:41.870725 2021] [wsgi:error] [pid 5495:tid 140680419427904] [remote 127.0.0.1:35484]     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+[Sat Oct 16 17:08:41.870775 2021] [wsgi:error] [pid 5495:tid 140680419427904] [remote 127.0.0.1:35484]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/conf/__init__.py", line 82, in __getattr__
+[Sat Oct 16 17:08:41.870806 2021] [wsgi:error] [pid 5495:tid 140680419427904] [remote 127.0.0.1:35484]     self._setup(name)
+[Sat Oct 16 17:08:41.870854 2021] [wsgi:error] [pid 5495:tid 140680419427904] [remote 127.0.0.1:35484]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/conf/__init__.py", line 69, in _setup
+[Sat Oct 16 17:08:41.870890 2021] [wsgi:error] [pid 5495:tid 140680419427904] [remote 127.0.0.1:35484]     self._wrapped = Settings(settings_module)
+[Sat Oct 16 17:08:41.870993 2021] [wsgi:error] [pid 5495:tid 140680419427904] [remote 127.0.0.1:35484]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/conf/__init__.py", line 170, in __init__
+[Sat Oct 16 17:08:41.871031 2021] [wsgi:error] [pid 5495:tid 140680419427904] [remote 127.0.0.1:35484]     mod = importlib.import_module(self.SETTINGS_MODULE)
+[Sat Oct 16 17:08:41.871092 2021] [wsgi:error] [pid 5495:tid 140680419427904] [remote 127.0.0.1:35484]   File "/usr/lib/python3.9/importlib/__init__.py", line 127, in import_module
+[Sat Oct 16 17:08:41.871124 2021] [wsgi:error] [pid 5495:tid 140680419427904] [remote 127.0.0.1:35484]     return _bootstrap._gcd_import(name[level:], package, level)
+[Sat Oct 16 17:08:41.871229 2021] [wsgi:error] [pid 5495:tid 140680419427904] [remote 127.0.0.1:35484]   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+[Sat Oct 16 17:08:41.871294 2021] [wsgi:error] [pid 5495:tid 140680419427904] [remote 127.0.0.1:35484]   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+[Sat Oct 16 17:08:41.871354 2021] [wsgi:error] [pid 5495:tid 140680419427904] [remote 127.0.0.1:35484]   File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+[Sat Oct 16 17:08:41.871413 2021] [wsgi:error] [pid 5495:tid 140680419427904] [remote 127.0.0.1:35484]   File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+[Sat Oct 16 17:08:41.871471 2021] [wsgi:error] [pid 5495:tid 140680419427904] [remote 127.0.0.1:35484]   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+[Sat Oct 16 17:08:41.871529 2021] [wsgi:error] [pid 5495:tid 140680419427904] [remote 127.0.0.1:35484]   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+[Sat Oct 16 17:08:41.871583 2021] [wsgi:error] [pid 5495:tid 140680419427904] [remote 127.0.0.1:35484]   File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+[Sat Oct 16 17:08:41.871636 2021] [wsgi:error] [pid 5495:tid 140680419427904] [remote 127.0.0.1:35484]   File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+[Sat Oct 16 17:08:41.871690 2021] [wsgi:error] [pid 5495:tid 140680419427904] [remote 127.0.0.1:35484]   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+[Sat Oct 16 17:08:41.871742 2021] [wsgi:error] [pid 5495:tid 140680419427904] [remote 127.0.0.1:35484]   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+[Sat Oct 16 17:08:41.871791 2021] [wsgi:error] [pid 5495:tid 140680419427904] [remote 127.0.0.1:35484]   File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+[Sat Oct 16 17:08:41.871895 2021] [wsgi:error] [pid 5495:tid 140680419427904] [remote 127.0.0.1:35484] ModuleNotFoundError: No module named '{{ project'
+127.0.0.1 - - [16/Oct/2021:17:08:41 +0200] "GET / HTTP/1.1" 500 809 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+[Sat Oct 16 17:11:10.421958 2021] [wsgi:error] [pid 7277:tid 140676035503680] [remote 127.0.0.1:35502] mod_wsgi (pid=7277): Failed to exec Python script file '/home/imjaimeortiz/Django_website/website-project/website/wsgi.py'.
+[Sat Oct 16 17:11:10.422023 2021] [wsgi:error] [pid 7277:tid 140676035503680] [remote 127.0.0.1:35502] mod_wsgi (pid=7277): Exception occurred processing WSGI script '/home/imjaimeortiz/Django_website/website-project/website/wsgi.py'.
+[Sat Oct 16 17:11:10.422567 2021] [wsgi:error] [pid 7277:tid 140676035503680] [remote 127.0.0.1:35502] Traceback (most recent call last):
+[Sat Oct 16 17:11:10.422634 2021] [wsgi:error] [pid 7277:tid 140676035503680] [remote 127.0.0.1:35502]   File "/home/imjaimeortiz/Django_website/website-project/website/wsgi.py", line 16, in <module>
+[Sat Oct 16 17:11:10.422644 2021] [wsgi:error] [pid 7277:tid 140676035503680] [remote 127.0.0.1:35502]     application = get_wsgi_application()
+[Sat Oct 16 17:11:10.422655 2021] [wsgi:error] [pid 7277:tid 140676035503680] [remote 127.0.0.1:35502]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+[Sat Oct 16 17:11:10.422669 2021] [wsgi:error] [pid 7277:tid 140676035503680] [remote 127.0.0.1:35502]     django.setup(set_prefix=False)
+[Sat Oct 16 17:11:10.422678 2021] [wsgi:error] [pid 7277:tid 140676035503680] [remote 127.0.0.1:35502]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/__init__.py", line 19, in setup
+[Sat Oct 16 17:11:10.422683 2021] [wsgi:error] [pid 7277:tid 140676035503680] [remote 127.0.0.1:35502]     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+[Sat Oct 16 17:11:10.422691 2021] [wsgi:error] [pid 7277:tid 140676035503680] [remote 127.0.0.1:35502]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/conf/__init__.py", line 82, in __getattr__
+[Sat Oct 16 17:11:10.422696 2021] [wsgi:error] [pid 7277:tid 140676035503680] [remote 127.0.0.1:35502]     self._setup(name)
+[Sat Oct 16 17:11:10.422704 2021] [wsgi:error] [pid 7277:tid 140676035503680] [remote 127.0.0.1:35502]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/conf/__init__.py", line 69, in _setup
+[Sat Oct 16 17:11:10.422709 2021] [wsgi:error] [pid 7277:tid 140676035503680] [remote 127.0.0.1:35502]     self._wrapped = Settings(settings_module)
+[Sat Oct 16 17:11:10.422717 2021] [wsgi:error] [pid 7277:tid 140676035503680] [remote 127.0.0.1:35502]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/conf/__init__.py", line 170, in __init__
+[Sat Oct 16 17:11:10.422723 2021] [wsgi:error] [pid 7277:tid 140676035503680] [remote 127.0.0.1:35502]     mod = importlib.import_module(self.SETTINGS_MODULE)
+[Sat Oct 16 17:11:10.422731 2021] [wsgi:error] [pid 7277:tid 140676035503680] [remote 127.0.0.1:35502]   File "/usr/lib/python3.9/importlib/__init__.py", line 127, in import_module
+[Sat Oct 16 17:11:10.422736 2021] [wsgi:error] [pid 7277:tid 140676035503680] [remote 127.0.0.1:35502]     return _bootstrap._gcd_import(name[level:], package, level)
+[Sat Oct 16 17:11:10.422744 2021] [wsgi:error] [pid 7277:tid 140676035503680] [remote 127.0.0.1:35502]   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+[Sat Oct 16 17:11:10.422751 2021] [wsgi:error] [pid 7277:tid 140676035503680] [remote 127.0.0.1:35502]   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+[Sat Oct 16 17:11:10.422759 2021] [wsgi:error] [pid 7277:tid 140676035503680] [remote 127.0.0.1:35502]   File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+[Sat Oct 16 17:11:10.422767 2021] [wsgi:error] [pid 7277:tid 140676035503680] [remote 127.0.0.1:35502]   File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+[Sat Oct 16 17:11:10.422774 2021] [wsgi:error] [pid 7277:tid 140676035503680] [remote 127.0.0.1:35502]   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+[Sat Oct 16 17:11:10.422782 2021] [wsgi:error] [pid 7277:tid 140676035503680] [remote 127.0.0.1:35502]   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+[Sat Oct 16 17:11:10.422792 2021] [wsgi:error] [pid 7277:tid 140676035503680] [remote 127.0.0.1:35502]   File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+[Sat Oct 16 17:11:10.422811 2021] [wsgi:error] [pid 7277:tid 140676035503680] [remote 127.0.0.1:35502] ModuleNotFoundError: No module named 'website'
+127.0.0.1 - - [16/Oct/2021:17:11:10 +0200] "GET / HTTP/1.1" 500 809 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+[Sat Oct 16 17:16:48.040985 2021] [wsgi:error] [pid 7817:tid 140097329202752] [remote 127.0.0.1:35558] mod_wsgi (pid=7817): Failed to exec Python script file '/home/imjaimeortiz/Django_website/website-project/website/wsgi.py'.
+[Sat Oct 16 17:16:48.041054 2021] [wsgi:error] [pid 7817:tid 140097329202752] [remote 127.0.0.1:35558] mod_wsgi (pid=7817): Exception occurred processing WSGI script '/home/imjaimeortiz/Django_website/website-project/website/wsgi.py'.
+[Sat Oct 16 17:16:48.041642 2021] [wsgi:error] [pid 7817:tid 140097329202752] [remote 127.0.0.1:35558] Traceback (most recent call last):
+[Sat Oct 16 17:16:48.041722 2021] [wsgi:error] [pid 7817:tid 140097329202752] [remote 127.0.0.1:35558]   File "/home/imjaimeortiz/Django_website/website-project/website/wsgi.py", line 16, in <module>
+[Sat Oct 16 17:16:48.041732 2021] [wsgi:error] [pid 7817:tid 140097329202752] [remote 127.0.0.1:35558]     application = get_wsgi_application()
+[Sat Oct 16 17:16:48.041743 2021] [wsgi:error] [pid 7817:tid 140097329202752] [remote 127.0.0.1:35558]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+[Sat Oct 16 17:16:48.041748 2021] [wsgi:error] [pid 7817:tid 140097329202752] [remote 127.0.0.1:35558]     django.setup(set_prefix=False)
+[Sat Oct 16 17:16:48.041756 2021] [wsgi:error] [pid 7817:tid 140097329202752] [remote 127.0.0.1:35558]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/__init__.py", line 19, in setup
+[Sat Oct 16 17:16:48.041760 2021] [wsgi:error] [pid 7817:tid 140097329202752] [remote 127.0.0.1:35558]     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+[Sat Oct 16 17:16:48.041768 2021] [wsgi:error] [pid 7817:tid 140097329202752] [remote 127.0.0.1:35558]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/conf/__init__.py", line 82, in __getattr__
+[Sat Oct 16 17:16:48.041773 2021] [wsgi:error] [pid 7817:tid 140097329202752] [remote 127.0.0.1:35558]     self._setup(name)
+[Sat Oct 16 17:16:48.041782 2021] [wsgi:error] [pid 7817:tid 140097329202752] [remote 127.0.0.1:35558]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/conf/__init__.py", line 69, in _setup
+[Sat Oct 16 17:16:48.041788 2021] [wsgi:error] [pid 7817:tid 140097329202752] [remote 127.0.0.1:35558]     self._wrapped = Settings(settings_module)
+[Sat Oct 16 17:16:48.041797 2021] [wsgi:error] [pid 7817:tid 140097329202752] [remote 127.0.0.1:35558]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/conf/__init__.py", line 170, in __init__
+[Sat Oct 16 17:16:48.041803 2021] [wsgi:error] [pid 7817:tid 140097329202752] [remote 127.0.0.1:35558]     mod = importlib.import_module(self.SETTINGS_MODULE)
+[Sat Oct 16 17:16:48.041811 2021] [wsgi:error] [pid 7817:tid 140097329202752] [remote 127.0.0.1:35558]   File "/usr/lib/python3.9/importlib/__init__.py", line 127, in import_module
+[Sat Oct 16 17:16:48.041817 2021] [wsgi:error] [pid 7817:tid 140097329202752] [remote 127.0.0.1:35558]     return _bootstrap._gcd_import(name[level:], package, level)
+[Sat Oct 16 17:16:48.041825 2021] [wsgi:error] [pid 7817:tid 140097329202752] [remote 127.0.0.1:35558]   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+[Sat Oct 16 17:16:48.041834 2021] [wsgi:error] [pid 7817:tid 140097329202752] [remote 127.0.0.1:35558]   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+[Sat Oct 16 17:16:48.041842 2021] [wsgi:error] [pid 7817:tid 140097329202752] [remote 127.0.0.1:35558]   File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+[Sat Oct 16 17:16:48.041852 2021] [wsgi:error] [pid 7817:tid 140097329202752] [remote 127.0.0.1:35558]   File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+[Sat Oct 16 17:16:48.041862 2021] [wsgi:error] [pid 7817:tid 140097329202752] [remote 127.0.0.1:35558]   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+[Sat Oct 16 17:16:48.041872 2021] [wsgi:error] [pid 7817:tid 140097329202752] [remote 127.0.0.1:35558]   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+[Sat Oct 16 17:16:48.041881 2021] [wsgi:error] [pid 7817:tid 140097329202752] [remote 127.0.0.1:35558]   File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+[Sat Oct 16 17:16:48.041902 2021] [wsgi:error] [pid 7817:tid 140097329202752] [remote 127.0.0.1:35558] ModuleNotFoundError: No module named 'website'
+127.0.0.1 - - [16/Oct/2021:17:16:47 +0200] "GET / HTTP/1.1" 500 809 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+[Sat Oct 16 17:36:51.915781 2021] [wsgi:error] [pid 9843:tid 139695576241728] [remote 127.0.0.1:35836] mod_wsgi (pid=9843): Failed to exec Python script file '/home/imjaimeortiz/Django_website/website-project/website/wsgi.py'.
+[Sat Oct 16 17:36:51.915865 2021] [wsgi:error] [pid 9843:tid 139695576241728] [remote 127.0.0.1:35836] mod_wsgi (pid=9843): Exception occurred processing WSGI script '/home/imjaimeortiz/Django_website/website-project/website/wsgi.py'.
+[Sat Oct 16 17:36:51.916419 2021] [wsgi:error] [pid 9843:tid 139695576241728] [remote 127.0.0.1:35836] Traceback (most recent call last):
+[Sat Oct 16 17:36:51.916487 2021] [wsgi:error] [pid 9843:tid 139695576241728] [remote 127.0.0.1:35836]   File "/home/imjaimeortiz/Django_website/website-project/website/wsgi.py", line 20, in <module>
+[Sat Oct 16 17:36:51.916496 2021] [wsgi:error] [pid 9843:tid 139695576241728] [remote 127.0.0.1:35836]     application = get_wsgi_application()
+[Sat Oct 16 17:36:51.916506 2021] [wsgi:error] [pid 9843:tid 139695576241728] [remote 127.0.0.1:35836]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+[Sat Oct 16 17:36:51.916511 2021] [wsgi:error] [pid 9843:tid 139695576241728] [remote 127.0.0.1:35836]     django.setup(set_prefix=False)
+[Sat Oct 16 17:36:51.916519 2021] [wsgi:error] [pid 9843:tid 139695576241728] [remote 127.0.0.1:35836]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/__init__.py", line 19, in setup
+[Sat Oct 16 17:36:51.916523 2021] [wsgi:error] [pid 9843:tid 139695576241728] [remote 127.0.0.1:35836]     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+[Sat Oct 16 17:36:51.916530 2021] [wsgi:error] [pid 9843:tid 139695576241728] [remote 127.0.0.1:35836]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/conf/__init__.py", line 82, in __getattr__
+[Sat Oct 16 17:36:51.916535 2021] [wsgi:error] [pid 9843:tid 139695576241728] [remote 127.0.0.1:35836]     self._setup(name)
+[Sat Oct 16 17:36:51.916542 2021] [wsgi:error] [pid 9843:tid 139695576241728] [remote 127.0.0.1:35836]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/conf/__init__.py", line 69, in _setup
+[Sat Oct 16 17:36:51.916548 2021] [wsgi:error] [pid 9843:tid 139695576241728] [remote 127.0.0.1:35836]     self._wrapped = Settings(settings_module)
+[Sat Oct 16 17:36:51.916555 2021] [wsgi:error] [pid 9843:tid 139695576241728] [remote 127.0.0.1:35836]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/conf/__init__.py", line 170, in __init__
+[Sat Oct 16 17:36:51.916561 2021] [wsgi:error] [pid 9843:tid 139695576241728] [remote 127.0.0.1:35836]     mod = importlib.import_module(self.SETTINGS_MODULE)
+[Sat Oct 16 17:36:51.916569 2021] [wsgi:error] [pid 9843:tid 139695576241728] [remote 127.0.0.1:35836]   File "/usr/lib/python3.9/importlib/__init__.py", line 127, in import_module
+[Sat Oct 16 17:36:51.916575 2021] [wsgi:error] [pid 9843:tid 139695576241728] [remote 127.0.0.1:35836]     return _bootstrap._gcd_import(name[level:], package, level)
+[Sat Oct 16 17:36:51.916583 2021] [wsgi:error] [pid 9843:tid 139695576241728] [remote 127.0.0.1:35836]   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+[Sat Oct 16 17:36:51.916592 2021] [wsgi:error] [pid 9843:tid 139695576241728] [remote 127.0.0.1:35836]   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+[Sat Oct 16 17:36:51.916601 2021] [wsgi:error] [pid 9843:tid 139695576241728] [remote 127.0.0.1:35836]   File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+[Sat Oct 16 17:36:51.916609 2021] [wsgi:error] [pid 9843:tid 139695576241728] [remote 127.0.0.1:35836]   File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+[Sat Oct 16 17:36:51.916619 2021] [wsgi:error] [pid 9843:tid 139695576241728] [remote 127.0.0.1:35836]   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+[Sat Oct 16 17:36:51.916627 2021] [wsgi:error] [pid 9843:tid 139695576241728] [remote 127.0.0.1:35836]   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+[Sat Oct 16 17:36:51.916636 2021] [wsgi:error] [pid 9843:tid 139695576241728] [remote 127.0.0.1:35836]   File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+[Sat Oct 16 17:36:51.916662 2021] [wsgi:error] [pid 9843:tid 139695576241728] [remote 127.0.0.1:35836] ModuleNotFoundError: No module named 'website'
+127.0.0.1 - - [16/Oct/2021:17:36:51 +0200] "GET / HTTP/1.1" 500 809 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+[Sat Oct 16 17:38:18.641721 2021] [wsgi:error] [pid 9843:tid 139695458743872] [remote 127.0.0.1:35846] mod_wsgi (pid=9843): Failed to exec Python script file '/home/imjaimeortiz/Django_website/website-project/website/wsgi.py'.
+[Sat Oct 16 17:38:18.641873 2021] [wsgi:error] [pid 9843:tid 139695458743872] [remote 127.0.0.1:35846] mod_wsgi (pid=9843): Exception occurred processing WSGI script '/home/imjaimeortiz/Django_website/website-project/website/wsgi.py'.
+[Sat Oct 16 17:38:18.642311 2021] [wsgi:error] [pid 9843:tid 139695458743872] [remote 127.0.0.1:35846] Traceback (most recent call last):
+[Sat Oct 16 17:38:18.642487 2021] [wsgi:error] [pid 9843:tid 139695458743872] [remote 127.0.0.1:35846]   File "/home/imjaimeortiz/Django_website/website-project/website/wsgi.py", line 20, in <module>
+[Sat Oct 16 17:38:18.642514 2021] [wsgi:error] [pid 9843:tid 139695458743872] [remote 127.0.0.1:35846]     application = get_wsgi_application()
+[Sat Oct 16 17:38:18.642546 2021] [wsgi:error] [pid 9843:tid 139695458743872] [remote 127.0.0.1:35846]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+[Sat Oct 16 17:38:18.642561 2021] [wsgi:error] [pid 9843:tid 139695458743872] [remote 127.0.0.1:35846]     django.setup(set_prefix=False)
+[Sat Oct 16 17:38:18.642587 2021] [wsgi:error] [pid 9843:tid 139695458743872] [remote 127.0.0.1:35846]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/__init__.py", line 19, in setup
+[Sat Oct 16 17:38:18.642605 2021] [wsgi:error] [pid 9843:tid 139695458743872] [remote 127.0.0.1:35846]     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+[Sat Oct 16 17:38:18.642630 2021] [wsgi:error] [pid 9843:tid 139695458743872] [remote 127.0.0.1:35846]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/conf/__init__.py", line 82, in __getattr__
+[Sat Oct 16 17:38:18.642649 2021] [wsgi:error] [pid 9843:tid 139695458743872] [remote 127.0.0.1:35846]     self._setup(name)
+[Sat Oct 16 17:38:18.642675 2021] [wsgi:error] [pid 9843:tid 139695458743872] [remote 127.0.0.1:35846]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/conf/__init__.py", line 69, in _setup
+[Sat Oct 16 17:38:18.642690 2021] [wsgi:error] [pid 9843:tid 139695458743872] [remote 127.0.0.1:35846]     self._wrapped = Settings(settings_module)
+[Sat Oct 16 17:38:18.642714 2021] [wsgi:error] [pid 9843:tid 139695458743872] [remote 127.0.0.1:35846]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/conf/__init__.py", line 170, in __init__
+[Sat Oct 16 17:38:18.642728 2021] [wsgi:error] [pid 9843:tid 139695458743872] [remote 127.0.0.1:35846]     mod = importlib.import_module(self.SETTINGS_MODULE)
+[Sat Oct 16 17:38:18.642752 2021] [wsgi:error] [pid 9843:tid 139695458743872] [remote 127.0.0.1:35846]   File "/usr/lib/python3.9/importlib/__init__.py", line 127, in import_module
+[Sat Oct 16 17:38:18.642771 2021] [wsgi:error] [pid 9843:tid 139695458743872] [remote 127.0.0.1:35846]     return _bootstrap._gcd_import(name[level:], package, level)
+[Sat Oct 16 17:38:18.642797 2021] [wsgi:error] [pid 9843:tid 139695458743872] [remote 127.0.0.1:35846]   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+[Sat Oct 16 17:38:18.642823 2021] [wsgi:error] [pid 9843:tid 139695458743872] [remote 127.0.0.1:35846]   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+[Sat Oct 16 17:38:18.642856 2021] [wsgi:error] [pid 9843:tid 139695458743872] [remote 127.0.0.1:35846]   File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+[Sat Oct 16 17:38:18.642883 2021] [wsgi:error] [pid 9843:tid 139695458743872] [remote 127.0.0.1:35846]   File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+[Sat Oct 16 17:38:18.642968 2021] [wsgi:error] [pid 9843:tid 139695458743872] [remote 127.0.0.1:35846]   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+[Sat Oct 16 17:38:18.643003 2021] [wsgi:error] [pid 9843:tid 139695458743872] [remote 127.0.0.1:35846]   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+[Sat Oct 16 17:38:18.643034 2021] [wsgi:error] [pid 9843:tid 139695458743872] [remote 127.0.0.1:35846]   File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+[Sat Oct 16 17:38:18.643100 2021] [wsgi:error] [pid 9843:tid 139695458743872] [remote 127.0.0.1:35846] ModuleNotFoundError: No module named 'website'
+127.0.0.1 - - [16/Oct/2021:17:38:18 +0200] "GET / HTTP/1.1" 500 809 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+[Sat Oct 16 17:43:14.542514 2021] [wsgi:error] [pid 10458:tid 139648016692800] [client 127.0.0.1:35888] Target WSGI script not found or unable to stat: /home/imjaimeortiz/Django_website/website-project/website/wsgi.py
+127.0.0.1 - - [16/Oct/2021:17:43:14 +0200] "GET / HTTP/1.1" 404 495 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+[Sat Oct 16 17:44:43.193371 2021] [wsgi:error] [pid 10459:tid 139648016692800] [client 127.0.0.1:35890] Target WSGI script not found or unable to stat: /home/imjaimeortiz/Django_website/website-project/website/wsgi.py
+127.0.0.1 - - [16/Oct/2021:17:44:43 +0200] "GET / HTTP/1.1" 404 495 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+[Sat Oct 16 17:44:44.057027 2021] [wsgi:error] [pid 10459:tid 139648008300096] [client 127.0.0.1:35890] Target WSGI script not found or unable to stat: /home/imjaimeortiz/Django_website/website-project/website/wsgi.py
+127.0.0.1 - - [16/Oct/2021:17:44:44 +0200] "GET / HTTP/1.1" 404 494 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+[Sat Oct 16 15:45:56.665630 2021] [wsgi:error] [pid 10790:tid 139725930952256] [remote 127.0.0.1:35902] mod_wsgi (pid=10790): Failed to exec Python script file '/home/imjaimeortiz/Django_website/website-project/website/website/wsgi.py'.
+[Sat Oct 16 15:45:56.665695 2021] [wsgi:error] [pid 10790:tid 139725930952256] [remote 127.0.0.1:35902] mod_wsgi (pid=10790): Exception occurred processing WSGI script '/home/imjaimeortiz/Django_website/website-project/website/website/wsgi.py'.
+[Sat Oct 16 15:45:56.669280 2021] [wsgi:error] [pid 10790:tid 139725930952256] [remote 127.0.0.1:35902] Traceback (most recent call last):
+[Sat Oct 16 15:45:56.669342 2021] [wsgi:error] [pid 10790:tid 139725930952256] [remote 127.0.0.1:35902]   File "/home/imjaimeortiz/Django_website/website-project/website/website/wsgi.py", line 20, in <module>
+[Sat Oct 16 15:45:56.669352 2021] [wsgi:error] [pid 10790:tid 139725930952256] [remote 127.0.0.1:35902]     application = get_wsgi_application()
+[Sat Oct 16 15:45:56.669362 2021] [wsgi:error] [pid 10790:tid 139725930952256] [remote 127.0.0.1:35902]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+[Sat Oct 16 15:45:56.669368 2021] [wsgi:error] [pid 10790:tid 139725930952256] [remote 127.0.0.1:35902]     django.setup(set_prefix=False)
+[Sat Oct 16 15:45:56.669377 2021] [wsgi:error] [pid 10790:tid 139725930952256] [remote 127.0.0.1:35902]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/__init__.py", line 24, in setup
+[Sat Oct 16 15:45:56.669383 2021] [wsgi:error] [pid 10790:tid 139725930952256] [remote 127.0.0.1:35902]     apps.populate(settings.INSTALLED_APPS)
+[Sat Oct 16 15:45:56.669392 2021] [wsgi:error] [pid 10790:tid 139725930952256] [remote 127.0.0.1:35902]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/apps/registry.py", line 91, in populate
+[Sat Oct 16 15:45:56.669398 2021] [wsgi:error] [pid 10790:tid 139725930952256] [remote 127.0.0.1:35902]     app_config = AppConfig.create(entry)
+[Sat Oct 16 15:45:56.669417 2021] [wsgi:error] [pid 10790:tid 139725930952256] [remote 127.0.0.1:35902]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/apps/config.py", line 212, in create
+[Sat Oct 16 15:45:56.669424 2021] [wsgi:error] [pid 10790:tid 139725930952256] [remote 127.0.0.1:35902]     mod = import_module(mod_path)
+[Sat Oct 16 15:45:56.669432 2021] [wsgi:error] [pid 10790:tid 139725930952256] [remote 127.0.0.1:35902]   File "/usr/lib/python3.9/importlib/__init__.py", line 127, in import_module
+[Sat Oct 16 15:45:56.669452 2021] [wsgi:error] [pid 10790:tid 139725930952256] [remote 127.0.0.1:35902]     return _bootstrap._gcd_import(name[level:], package, level)
+[Sat Oct 16 15:45:56.669462 2021] [wsgi:error] [pid 10790:tid 139725930952256] [remote 127.0.0.1:35902]   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+[Sat Oct 16 15:45:56.669473 2021] [wsgi:error] [pid 10790:tid 139725930952256] [remote 127.0.0.1:35902]   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+[Sat Oct 16 15:45:56.669483 2021] [wsgi:error] [pid 10790:tid 139725930952256] [remote 127.0.0.1:35902]   File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+[Sat Oct 16 15:45:56.669493 2021] [wsgi:error] [pid 10790:tid 139725930952256] [remote 127.0.0.1:35902]   File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+[Sat Oct 16 15:45:56.669504 2021] [wsgi:error] [pid 10790:tid 139725930952256] [remote 127.0.0.1:35902]   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+[Sat Oct 16 15:45:56.669514 2021] [wsgi:error] [pid 10790:tid 139725930952256] [remote 127.0.0.1:35902]   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+[Sat Oct 16 15:45:56.669524 2021] [wsgi:error] [pid 10790:tid 139725930952256] [remote 127.0.0.1:35902]   File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+[Sat Oct 16 15:45:56.669546 2021] [wsgi:error] [pid 10790:tid 139725930952256] [remote 127.0.0.1:35902] ModuleNotFoundError: No module named 'project'
+127.0.0.1 - - [16/Oct/2021:17:45:56 +0200] "GET / HTTP/1.1" 500 809 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+[Sat Oct 16 15:46:56.487252 2021] [wsgi:error] [pid 10948:tid 140632430052928] [remote 127.0.0.1:35906] mod_wsgi (pid=10948): Failed to exec Python script file '/home/imjaimeortiz/Django_website/website-project/website/website/wsgi.py'.
+[Sat Oct 16 15:46:56.487322 2021] [wsgi:error] [pid 10948:tid 140632430052928] [remote 127.0.0.1:35906] mod_wsgi (pid=10948): Exception occurred processing WSGI script '/home/imjaimeortiz/Django_website/website-project/website/website/wsgi.py'.
+[Sat Oct 16 15:46:56.488008 2021] [wsgi:error] [pid 10948:tid 140632430052928] [remote 127.0.0.1:35906] Traceback (most recent call last):
+[Sat Oct 16 15:46:56.488076 2021] [wsgi:error] [pid 10948:tid 140632430052928] [remote 127.0.0.1:35906]   File "/home/imjaimeortiz/Django_website/website-project/website/website/wsgi.py", line 20, in <module>
+[Sat Oct 16 15:46:56.488087 2021] [wsgi:error] [pid 10948:tid 140632430052928] [remote 127.0.0.1:35906]     application = get_wsgi_application()
+[Sat Oct 16 15:46:56.488103 2021] [wsgi:error] [pid 10948:tid 140632430052928] [remote 127.0.0.1:35906]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+[Sat Oct 16 15:46:56.488111 2021] [wsgi:error] [pid 10948:tid 140632430052928] [remote 127.0.0.1:35906]     django.setup(set_prefix=False)
+[Sat Oct 16 15:46:56.488124 2021] [wsgi:error] [pid 10948:tid 140632430052928] [remote 127.0.0.1:35906]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/__init__.py", line 24, in setup
+[Sat Oct 16 15:46:56.488132 2021] [wsgi:error] [pid 10948:tid 140632430052928] [remote 127.0.0.1:35906]     apps.populate(settings.INSTALLED_APPS)
+[Sat Oct 16 15:46:56.488145 2021] [wsgi:error] [pid 10948:tid 140632430052928] [remote 127.0.0.1:35906]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/apps/registry.py", line 91, in populate
+[Sat Oct 16 15:46:56.488163 2021] [wsgi:error] [pid 10948:tid 140632430052928] [remote 127.0.0.1:35906]     app_config = AppConfig.create(entry)
+[Sat Oct 16 15:46:56.488177 2021] [wsgi:error] [pid 10948:tid 140632430052928] [remote 127.0.0.1:35906]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/apps/config.py", line 212, in create
+[Sat Oct 16 15:46:56.488184 2021] [wsgi:error] [pid 10948:tid 140632430052928] [remote 127.0.0.1:35906]     mod = import_module(mod_path)
+[Sat Oct 16 15:46:56.488199 2021] [wsgi:error] [pid 10948:tid 140632430052928] [remote 127.0.0.1:35906]   File "/usr/lib/python3.9/importlib/__init__.py", line 127, in import_module
+[Sat Oct 16 15:46:56.488207 2021] [wsgi:error] [pid 10948:tid 140632430052928] [remote 127.0.0.1:35906]     return _bootstrap._gcd_import(name[level:], package, level)
+[Sat Oct 16 15:46:56.488221 2021] [wsgi:error] [pid 10948:tid 140632430052928] [remote 127.0.0.1:35906]   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+[Sat Oct 16 15:46:56.488235 2021] [wsgi:error] [pid 10948:tid 140632430052928] [remote 127.0.0.1:35906]   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+[Sat Oct 16 15:46:56.488250 2021] [wsgi:error] [pid 10948:tid 140632430052928] [remote 127.0.0.1:35906]   File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+[Sat Oct 16 15:46:56.488264 2021] [wsgi:error] [pid 10948:tid 140632430052928] [remote 127.0.0.1:35906]   File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+[Sat Oct 16 15:46:56.488278 2021] [wsgi:error] [pid 10948:tid 140632430052928] [remote 127.0.0.1:35906]   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+[Sat Oct 16 15:46:56.488292 2021] [wsgi:error] [pid 10948:tid 140632430052928] [remote 127.0.0.1:35906]   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+[Sat Oct 16 15:46:56.488306 2021] [wsgi:error] [pid 10948:tid 140632430052928] [remote 127.0.0.1:35906]   File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+[Sat Oct 16 15:46:56.488331 2021] [wsgi:error] [pid 10948:tid 140632430052928] [remote 127.0.0.1:35906] ModuleNotFoundError: No module named 'project'
+127.0.0.1 - - [16/Oct/2021:17:46:56 +0200] "GET / HTTP/1.1" 500 809 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+[Sat Oct 16 17:47:24.605139 2021] [wsgi:error] [pid 11073:tid 140564406421056] [client 127.0.0.1:35908] Target WSGI script not found or unable to stat: /home/imjaimeortiz/Django_website/website-project/website/wsgi.py
+127.0.0.1 - - [16/Oct/2021:17:47:24 +0200] "GET / HTTP/1.1" 404 495 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+[Sat Oct 16 17:47:40.436000 2021] [wsgi:error] [pid 11186:tid 140685680309824] [client 127.0.0.1:35910] Target WSGI script not found or unable to stat: /home/imjaimeortiz/Django_website/website-project/website/wsgi.py
+127.0.0.1 - - [16/Oct/2021:17:47:40 +0200] "GET / HTTP/1.1" 404 495 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+[Sat Oct 16 17:48:30.958257 2021] [wsgi:error] [pid 11329:tid 140170344851008] [client 127.0.0.1:35912] Target WSGI script not found or unable to stat: /home/imjaimeortiz/Django_website/website-project/website/wsgi.py
+127.0.0.1 - - [16/Oct/2021:17:48:30 +0200] "GET / HTTP/1.1" 404 495 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+[Sat Oct 16 17:51:09.322242 2021] [wsgi:error] [pid 11328:tid 140170335934016] [remote 127.0.0.1:35922] mod_wsgi (pid=11328): Failed to exec Python script file '/home/imjaimeortiz/Django_website/website-project/website/wsgi.py'.
+[Sat Oct 16 17:51:09.322301 2021] [wsgi:error] [pid 11328:tid 140170335934016] [remote 127.0.0.1:35922] mod_wsgi (pid=11328): Exception occurred processing WSGI script '/home/imjaimeortiz/Django_website/website-project/website/wsgi.py'.
+[Sat Oct 16 17:51:09.322802 2021] [wsgi:error] [pid 11328:tid 140170335934016] [remote 127.0.0.1:35922] Traceback (most recent call last):
+[Sat Oct 16 17:51:09.322870 2021] [wsgi:error] [pid 11328:tid 140170335934016] [remote 127.0.0.1:35922]   File "/home/imjaimeortiz/Django_website/website-project/website/wsgi.py", line 20, in <module>
+[Sat Oct 16 17:51:09.322879 2021] [wsgi:error] [pid 11328:tid 140170335934016] [remote 127.0.0.1:35922]     application = get_wsgi_application()
+[Sat Oct 16 17:51:09.322889 2021] [wsgi:error] [pid 11328:tid 140170335934016] [remote 127.0.0.1:35922]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+[Sat Oct 16 17:51:09.322894 2021] [wsgi:error] [pid 11328:tid 140170335934016] [remote 127.0.0.1:35922]     django.setup(set_prefix=False)
+[Sat Oct 16 17:51:09.322901 2021] [wsgi:error] [pid 11328:tid 140170335934016] [remote 127.0.0.1:35922]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/__init__.py", line 19, in setup
+[Sat Oct 16 17:51:09.322905 2021] [wsgi:error] [pid 11328:tid 140170335934016] [remote 127.0.0.1:35922]     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+[Sat Oct 16 17:51:09.322912 2021] [wsgi:error] [pid 11328:tid 140170335934016] [remote 127.0.0.1:35922]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/conf/__init__.py", line 82, in __getattr__
+[Sat Oct 16 17:51:09.322916 2021] [wsgi:error] [pid 11328:tid 140170335934016] [remote 127.0.0.1:35922]     self._setup(name)
+[Sat Oct 16 17:51:09.322923 2021] [wsgi:error] [pid 11328:tid 140170335934016] [remote 127.0.0.1:35922]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/conf/__init__.py", line 69, in _setup
+[Sat Oct 16 17:51:09.322927 2021] [wsgi:error] [pid 11328:tid 140170335934016] [remote 127.0.0.1:35922]     self._wrapped = Settings(settings_module)
+[Sat Oct 16 17:51:09.322935 2021] [wsgi:error] [pid 11328:tid 140170335934016] [remote 127.0.0.1:35922]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/conf/__init__.py", line 170, in __init__
+[Sat Oct 16 17:51:09.322941 2021] [wsgi:error] [pid 11328:tid 140170335934016] [remote 127.0.0.1:35922]     mod = importlib.import_module(self.SETTINGS_MODULE)
+[Sat Oct 16 17:51:09.322949 2021] [wsgi:error] [pid 11328:tid 140170335934016] [remote 127.0.0.1:35922]   File "/usr/lib/python3.9/importlib/__init__.py", line 127, in import_module
+[Sat Oct 16 17:51:09.322954 2021] [wsgi:error] [pid 11328:tid 140170335934016] [remote 127.0.0.1:35922]     return _bootstrap._gcd_import(name[level:], package, level)
+[Sat Oct 16 17:51:09.322962 2021] [wsgi:error] [pid 11328:tid 140170335934016] [remote 127.0.0.1:35922]   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+[Sat Oct 16 17:51:09.322969 2021] [wsgi:error] [pid 11328:tid 140170335934016] [remote 127.0.0.1:35922]   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+[Sat Oct 16 17:51:09.322976 2021] [wsgi:error] [pid 11328:tid 140170335934016] [remote 127.0.0.1:35922]   File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+[Sat Oct 16 17:51:09.322994 2021] [wsgi:error] [pid 11328:tid 140170335934016] [remote 127.0.0.1:35922] ModuleNotFoundError: No module named 'website.settings'
+127.0.0.1 - - [16/Oct/2021:17:51:09 +0200] "GET / HTTP/1.1" 500 809 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+[Sat Oct 16 17:51:27.139662 2021] [wsgi:error] [pid 11661:tid 140625262392896] [remote 127.0.0.1:35930] mod_wsgi (pid=11661): Failed to exec Python script file '/home/imjaimeortiz/Django_website/website-project/website/wsgi.py'.
+[Sat Oct 16 17:51:27.139733 2021] [wsgi:error] [pid 11661:tid 140625262392896] [remote 127.0.0.1:35930] mod_wsgi (pid=11661): Exception occurred processing WSGI script '/home/imjaimeortiz/Django_website/website-project/website/wsgi.py'.
+[Sat Oct 16 17:51:27.140275 2021] [wsgi:error] [pid 11661:tid 140625262392896] [remote 127.0.0.1:35930] Traceback (most recent call last):
+[Sat Oct 16 17:51:27.140336 2021] [wsgi:error] [pid 11661:tid 140625262392896] [remote 127.0.0.1:35930]   File "/home/imjaimeortiz/Django_website/website-project/website/wsgi.py", line 20, in <module>
+[Sat Oct 16 17:51:27.140354 2021] [wsgi:error] [pid 11661:tid 140625262392896] [remote 127.0.0.1:35930]     application = get_wsgi_application()
+[Sat Oct 16 17:51:27.140366 2021] [wsgi:error] [pid 11661:tid 140625262392896] [remote 127.0.0.1:35930]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+[Sat Oct 16 17:51:27.140370 2021] [wsgi:error] [pid 11661:tid 140625262392896] [remote 127.0.0.1:35930]     django.setup(set_prefix=False)
+[Sat Oct 16 17:51:27.140378 2021] [wsgi:error] [pid 11661:tid 140625262392896] [remote 127.0.0.1:35930]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/__init__.py", line 19, in setup
+[Sat Oct 16 17:51:27.140383 2021] [wsgi:error] [pid 11661:tid 140625262392896] [remote 127.0.0.1:35930]     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+[Sat Oct 16 17:51:27.140390 2021] [wsgi:error] [pid 11661:tid 140625262392896] [remote 127.0.0.1:35930]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/conf/__init__.py", line 82, in __getattr__
+[Sat Oct 16 17:51:27.140394 2021] [wsgi:error] [pid 11661:tid 140625262392896] [remote 127.0.0.1:35930]     self._setup(name)
+[Sat Oct 16 17:51:27.140402 2021] [wsgi:error] [pid 11661:tid 140625262392896] [remote 127.0.0.1:35930]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/conf/__init__.py", line 69, in _setup
+[Sat Oct 16 17:51:27.140408 2021] [wsgi:error] [pid 11661:tid 140625262392896] [remote 127.0.0.1:35930]     self._wrapped = Settings(settings_module)
+[Sat Oct 16 17:51:27.140416 2021] [wsgi:error] [pid 11661:tid 140625262392896] [remote 127.0.0.1:35930]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/conf/__init__.py", line 170, in __init__
+[Sat Oct 16 17:51:27.140421 2021] [wsgi:error] [pid 11661:tid 140625262392896] [remote 127.0.0.1:35930]     mod = importlib.import_module(self.SETTINGS_MODULE)
+[Sat Oct 16 17:51:27.140429 2021] [wsgi:error] [pid 11661:tid 140625262392896] [remote 127.0.0.1:35930]   File "/usr/lib/python3.9/importlib/__init__.py", line 127, in import_module
+[Sat Oct 16 17:51:27.140435 2021] [wsgi:error] [pid 11661:tid 140625262392896] [remote 127.0.0.1:35930]     return _bootstrap._gcd_import(name[level:], package, level)
+[Sat Oct 16 17:51:27.140443 2021] [wsgi:error] [pid 11661:tid 140625262392896] [remote 127.0.0.1:35930]   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+[Sat Oct 16 17:51:27.140451 2021] [wsgi:error] [pid 11661:tid 140625262392896] [remote 127.0.0.1:35930]   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+[Sat Oct 16 17:51:27.140459 2021] [wsgi:error] [pid 11661:tid 140625262392896] [remote 127.0.0.1:35930]   File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+[Sat Oct 16 17:51:27.140476 2021] [wsgi:error] [pid 11661:tid 140625262392896] [remote 127.0.0.1:35930] ModuleNotFoundError: No module named 'website.settings'
+127.0.0.1 - - [16/Oct/2021:17:51:26 +0200] "GET / HTTP/1.1" 500 809 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+[Sat Oct 16 17:52:21.199597 2021] [wsgi:error] [pid 11836:tid 139793842497088] [remote 127.0.0.1:35938] mod_wsgi (pid=11836): Failed to exec Python script file '/home/imjaimeortiz/Django_website/website-project/website/wsgi.py'.
+[Sat Oct 16 17:52:21.199663 2021] [wsgi:error] [pid 11836:tid 139793842497088] [remote 127.0.0.1:35938] mod_wsgi (pid=11836): Exception occurred processing WSGI script '/home/imjaimeortiz/Django_website/website-project/website/wsgi.py'.
+[Sat Oct 16 17:52:21.200217 2021] [wsgi:error] [pid 11836:tid 139793842497088] [remote 127.0.0.1:35938] Traceback (most recent call last):
+[Sat Oct 16 17:52:21.200282 2021] [wsgi:error] [pid 11836:tid 139793842497088] [remote 127.0.0.1:35938]   File "/home/imjaimeortiz/Django_website/website-project/website/wsgi.py", line 20, in <module>
+[Sat Oct 16 17:52:21.200292 2021] [wsgi:error] [pid 11836:tid 139793842497088] [remote 127.0.0.1:35938]     application = get_wsgi_application()
+[Sat Oct 16 17:52:21.200312 2021] [wsgi:error] [pid 11836:tid 139793842497088] [remote 127.0.0.1:35938]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+[Sat Oct 16 17:52:21.200317 2021] [wsgi:error] [pid 11836:tid 139793842497088] [remote 127.0.0.1:35938]     django.setup(set_prefix=False)
+[Sat Oct 16 17:52:21.200324 2021] [wsgi:error] [pid 11836:tid 139793842497088] [remote 127.0.0.1:35938]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/__init__.py", line 19, in setup
+[Sat Oct 16 17:52:21.200329 2021] [wsgi:error] [pid 11836:tid 139793842497088] [remote 127.0.0.1:35938]     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+[Sat Oct 16 17:52:21.200336 2021] [wsgi:error] [pid 11836:tid 139793842497088] [remote 127.0.0.1:35938]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/conf/__init__.py", line 82, in __getattr__
+[Sat Oct 16 17:52:21.200342 2021] [wsgi:error] [pid 11836:tid 139793842497088] [remote 127.0.0.1:35938]     self._setup(name)
+[Sat Oct 16 17:52:21.200350 2021] [wsgi:error] [pid 11836:tid 139793842497088] [remote 127.0.0.1:35938]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/conf/__init__.py", line 69, in _setup
+[Sat Oct 16 17:52:21.200355 2021] [wsgi:error] [pid 11836:tid 139793842497088] [remote 127.0.0.1:35938]     self._wrapped = Settings(settings_module)
+[Sat Oct 16 17:52:21.200362 2021] [wsgi:error] [pid 11836:tid 139793842497088] [remote 127.0.0.1:35938]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/conf/__init__.py", line 170, in __init__
+[Sat Oct 16 17:52:21.200368 2021] [wsgi:error] [pid 11836:tid 139793842497088] [remote 127.0.0.1:35938]     mod = importlib.import_module(self.SETTINGS_MODULE)
+[Sat Oct 16 17:52:21.200376 2021] [wsgi:error] [pid 11836:tid 139793842497088] [remote 127.0.0.1:35938]   File "/usr/lib/python3.9/importlib/__init__.py", line 127, in import_module
+[Sat Oct 16 17:52:21.200380 2021] [wsgi:error] [pid 11836:tid 139793842497088] [remote 127.0.0.1:35938]     return _bootstrap._gcd_import(name[level:], package, level)
+[Sat Oct 16 17:52:21.200388 2021] [wsgi:error] [pid 11836:tid 139793842497088] [remote 127.0.0.1:35938]   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+[Sat Oct 16 17:52:21.200396 2021] [wsgi:error] [pid 11836:tid 139793842497088] [remote 127.0.0.1:35938]   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+[Sat Oct 16 17:52:21.200404 2021] [wsgi:error] [pid 11836:tid 139793842497088] [remote 127.0.0.1:35938]   File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+[Sat Oct 16 17:52:21.200422 2021] [wsgi:error] [pid 11836:tid 139793842497088] [remote 127.0.0.1:35938] ModuleNotFoundError: No module named 'website.settings'
+127.0.0.1 - - [16/Oct/2021:17:52:20 +0200] "GET / HTTP/1.1" 500 809 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+[Sat Oct 16 17:53:03.188204 2021] [wsgi:error] [pid 11970:tid 140196794480192] [remote 127.0.0.1:35940] mod_wsgi (pid=11970): Failed to exec Python script file '/home/imjaimeortiz/Django_website/website-project/website/wsgi.py'.
+[Sat Oct 16 17:53:03.188268 2021] [wsgi:error] [pid 11970:tid 140196794480192] [remote 127.0.0.1:35940] mod_wsgi (pid=11970): Exception occurred processing WSGI script '/home/imjaimeortiz/Django_website/website-project/website/wsgi.py'.
+[Sat Oct 16 17:53:03.188812 2021] [wsgi:error] [pid 11970:tid 140196794480192] [remote 127.0.0.1:35940] Traceback (most recent call last):
+[Sat Oct 16 17:53:03.188874 2021] [wsgi:error] [pid 11970:tid 140196794480192] [remote 127.0.0.1:35940]   File "/home/imjaimeortiz/Django_website/website-project/website/wsgi.py", line 20, in <module>
+[Sat Oct 16 17:53:03.188883 2021] [wsgi:error] [pid 11970:tid 140196794480192] [remote 127.0.0.1:35940]     application = get_wsgi_application()
+[Sat Oct 16 17:53:03.188895 2021] [wsgi:error] [pid 11970:tid 140196794480192] [remote 127.0.0.1:35940]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+[Sat Oct 16 17:53:03.188916 2021] [wsgi:error] [pid 11970:tid 140196794480192] [remote 127.0.0.1:35940]     django.setup(set_prefix=False)
+[Sat Oct 16 17:53:03.188926 2021] [wsgi:error] [pid 11970:tid 140196794480192] [remote 127.0.0.1:35940]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/__init__.py", line 19, in setup
+[Sat Oct 16 17:53:03.188930 2021] [wsgi:error] [pid 11970:tid 140196794480192] [remote 127.0.0.1:35940]     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+[Sat Oct 16 17:53:03.188937 2021] [wsgi:error] [pid 11970:tid 140196794480192] [remote 127.0.0.1:35940]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/conf/__init__.py", line 82, in __getattr__
+[Sat Oct 16 17:53:03.188943 2021] [wsgi:error] [pid 11970:tid 140196794480192] [remote 127.0.0.1:35940]     self._setup(name)
+[Sat Oct 16 17:53:03.188951 2021] [wsgi:error] [pid 11970:tid 140196794480192] [remote 127.0.0.1:35940]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/conf/__init__.py", line 69, in _setup
+[Sat Oct 16 17:53:03.188957 2021] [wsgi:error] [pid 11970:tid 140196794480192] [remote 127.0.0.1:35940]     self._wrapped = Settings(settings_module)
+[Sat Oct 16 17:53:03.188965 2021] [wsgi:error] [pid 11970:tid 140196794480192] [remote 127.0.0.1:35940]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/conf/__init__.py", line 170, in __init__
+[Sat Oct 16 17:53:03.188970 2021] [wsgi:error] [pid 11970:tid 140196794480192] [remote 127.0.0.1:35940]     mod = importlib.import_module(self.SETTINGS_MODULE)
+[Sat Oct 16 17:53:03.188979 2021] [wsgi:error] [pid 11970:tid 140196794480192] [remote 127.0.0.1:35940]   File "/usr/lib/python3.9/importlib/__init__.py", line 127, in import_module
+[Sat Oct 16 17:53:03.188983 2021] [wsgi:error] [pid 11970:tid 140196794480192] [remote 127.0.0.1:35940]     return _bootstrap._gcd_import(name[level:], package, level)
+[Sat Oct 16 17:53:03.188990 2021] [wsgi:error] [pid 11970:tid 140196794480192] [remote 127.0.0.1:35940]   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+[Sat Oct 16 17:53:03.188998 2021] [wsgi:error] [pid 11970:tid 140196794480192] [remote 127.0.0.1:35940]   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+[Sat Oct 16 17:53:03.189006 2021] [wsgi:error] [pid 11970:tid 140196794480192] [remote 127.0.0.1:35940]   File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+[Sat Oct 16 17:53:03.189024 2021] [wsgi:error] [pid 11970:tid 140196794480192] [remote 127.0.0.1:35940] ModuleNotFoundError: No module named 'website.settings'
+127.0.0.1 - - [16/Oct/2021:17:53:02 +0200] "GET / HTTP/1.1" 500 809 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+[Sat Oct 16 17:54:08.360952 2021] [wsgi:error] [pid 12157:tid 140236105705024] [remote 127.0.0.1:35948] mod_wsgi (pid=12157): Failed to exec Python script file '/home/imjaimeortiz/Django_website/website-project/website/wsgi.py'.
+[Sat Oct 16 17:54:08.361020 2021] [wsgi:error] [pid 12157:tid 140236105705024] [remote 127.0.0.1:35948] mod_wsgi (pid=12157): Exception occurred processing WSGI script '/home/imjaimeortiz/Django_website/website-project/website/wsgi.py'.
+[Sat Oct 16 17:54:08.361574 2021] [wsgi:error] [pid 12157:tid 140236105705024] [remote 127.0.0.1:35948] Traceback (most recent call last):
+[Sat Oct 16 17:54:08.361638 2021] [wsgi:error] [pid 12157:tid 140236105705024] [remote 127.0.0.1:35948]   File "/home/imjaimeortiz/Django_website/website-project/website/wsgi.py", line 20, in <module>
+[Sat Oct 16 17:54:08.361647 2021] [wsgi:error] [pid 12157:tid 140236105705024] [remote 127.0.0.1:35948]     application = get_wsgi_application()
+[Sat Oct 16 17:54:08.361658 2021] [wsgi:error] [pid 12157:tid 140236105705024] [remote 127.0.0.1:35948]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+[Sat Oct 16 17:54:08.361676 2021] [wsgi:error] [pid 12157:tid 140236105705024] [remote 127.0.0.1:35948]     django.setup(set_prefix=False)
+[Sat Oct 16 17:54:08.361684 2021] [wsgi:error] [pid 12157:tid 140236105705024] [remote 127.0.0.1:35948]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/__init__.py", line 19, in setup
+[Sat Oct 16 17:54:08.361689 2021] [wsgi:error] [pid 12157:tid 140236105705024] [remote 127.0.0.1:35948]     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+[Sat Oct 16 17:54:08.361696 2021] [wsgi:error] [pid 12157:tid 140236105705024] [remote 127.0.0.1:35948]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/conf/__init__.py", line 82, in __getattr__
+[Sat Oct 16 17:54:08.361702 2021] [wsgi:error] [pid 12157:tid 140236105705024] [remote 127.0.0.1:35948]     self._setup(name)
+[Sat Oct 16 17:54:08.361709 2021] [wsgi:error] [pid 12157:tid 140236105705024] [remote 127.0.0.1:35948]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/conf/__init__.py", line 69, in _setup
+[Sat Oct 16 17:54:08.361715 2021] [wsgi:error] [pid 12157:tid 140236105705024] [remote 127.0.0.1:35948]     self._wrapped = Settings(settings_module)
+[Sat Oct 16 17:54:08.361722 2021] [wsgi:error] [pid 12157:tid 140236105705024] [remote 127.0.0.1:35948]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/conf/__init__.py", line 170, in __init__
+[Sat Oct 16 17:54:08.361726 2021] [wsgi:error] [pid 12157:tid 140236105705024] [remote 127.0.0.1:35948]     mod = importlib.import_module(self.SETTINGS_MODULE)
+[Sat Oct 16 17:54:08.361734 2021] [wsgi:error] [pid 12157:tid 140236105705024] [remote 127.0.0.1:35948]   File "/usr/lib/python3.9/importlib/__init__.py", line 127, in import_module
+[Sat Oct 16 17:54:08.361738 2021] [wsgi:error] [pid 12157:tid 140236105705024] [remote 127.0.0.1:35948]     return _bootstrap._gcd_import(name[level:], package, level)
+[Sat Oct 16 17:54:08.361746 2021] [wsgi:error] [pid 12157:tid 140236105705024] [remote 127.0.0.1:35948]   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+[Sat Oct 16 17:54:08.361753 2021] [wsgi:error] [pid 12157:tid 140236105705024] [remote 127.0.0.1:35948]   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+[Sat Oct 16 17:54:08.361760 2021] [wsgi:error] [pid 12157:tid 140236105705024] [remote 127.0.0.1:35948]   File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+[Sat Oct 16 17:54:08.361778 2021] [wsgi:error] [pid 12157:tid 140236105705024] [remote 127.0.0.1:35948] ModuleNotFoundError: No module named 'website.settings'
+127.0.0.1 - - [16/Oct/2021:17:54:08 +0200] "GET / HTTP/1.1" 500 809 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+[Sat Oct 16 17:54:47.060074 2021] [wsgi:error] [pid 12159:tid 140236114622016] [client 127.0.0.1:35954] Target WSGI script not found or unable to stat: /home/imjaimeortiz/Django_website/website-project/website/wsgi.py
+127.0.0.1 - - [16/Oct/2021:17:54:47 +0200] "GET / HTTP/1.1" 404 495 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+[Sat Oct 16 17:56:54.507257 2021] [wsgi:error] [pid 12481:tid 140171375056448] [client 127.0.0.1:35968] Target WSGI script not found or unable to stat: /home/imjaimeortiz/Django_website/website-project/website/wsgi.py
+127.0.0.1 - - [16/Oct/2021:17:56:54 +0200] "GET / HTTP/1.1" 404 495 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+[Sat Oct 16 17:56:55.490726 2021] [wsgi:error] [pid 12481:tid 140171383449152] [client 127.0.0.1:35968] Target WSGI script not found or unable to stat: /home/imjaimeortiz/Django_website/website-project/website/wsgi.py
+127.0.0.1 - - [16/Oct/2021:17:56:55 +0200] "GET / HTTP/1.1" 404 494 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+[Sat Oct 16 17:57:13.451877 2021] [wsgi:error] [pid 12480:tid 140171374532160] [remote 127.0.0.1:35976] mod_wsgi (pid=12480): Failed to exec Python script file '/home/imjaimeortiz/Django_website/website-project/website/wsgi.py'.
+[Sat Oct 16 17:57:13.451949 2021] [wsgi:error] [pid 12480:tid 140171374532160] [remote 127.0.0.1:35976] mod_wsgi (pid=12480): Exception occurred processing WSGI script '/home/imjaimeortiz/Django_website/website-project/website/wsgi.py'.
+[Sat Oct 16 17:57:13.452488 2021] [wsgi:error] [pid 12480:tid 140171374532160] [remote 127.0.0.1:35976] Traceback (most recent call last):
+[Sat Oct 16 17:57:13.452551 2021] [wsgi:error] [pid 12480:tid 140171374532160] [remote 127.0.0.1:35976]   File "/home/imjaimeortiz/Django_website/website-project/website/wsgi.py", line 20, in <module>
+[Sat Oct 16 17:57:13.452560 2021] [wsgi:error] [pid 12480:tid 140171374532160] [remote 127.0.0.1:35976]     application = get_wsgi_application()
+[Sat Oct 16 17:57:13.452571 2021] [wsgi:error] [pid 12480:tid 140171374532160] [remote 127.0.0.1:35976]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+[Sat Oct 16 17:57:13.452576 2021] [wsgi:error] [pid 12480:tid 140171374532160] [remote 127.0.0.1:35976]     django.setup(set_prefix=False)
+[Sat Oct 16 17:57:13.452583 2021] [wsgi:error] [pid 12480:tid 140171374532160] [remote 127.0.0.1:35976]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/__init__.py", line 19, in setup
+[Sat Oct 16 17:57:13.452587 2021] [wsgi:error] [pid 12480:tid 140171374532160] [remote 127.0.0.1:35976]     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+[Sat Oct 16 17:57:13.452595 2021] [wsgi:error] [pid 12480:tid 140171374532160] [remote 127.0.0.1:35976]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/conf/__init__.py", line 82, in __getattr__
+[Sat Oct 16 17:57:13.452599 2021] [wsgi:error] [pid 12480:tid 140171374532160] [remote 127.0.0.1:35976]     self._setup(name)
+[Sat Oct 16 17:57:13.452606 2021] [wsgi:error] [pid 12480:tid 140171374532160] [remote 127.0.0.1:35976]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/conf/__init__.py", line 69, in _setup
+[Sat Oct 16 17:57:13.452610 2021] [wsgi:error] [pid 12480:tid 140171374532160] [remote 127.0.0.1:35976]     self._wrapped = Settings(settings_module)
+[Sat Oct 16 17:57:13.452618 2021] [wsgi:error] [pid 12480:tid 140171374532160] [remote 127.0.0.1:35976]   File "/home/imjaimeortiz/myvenv/lib/python3.9/site-packages/django/conf/__init__.py", line 170, in __init__
+[Sat Oct 16 17:57:13.452624 2021] [wsgi:error] [pid 12480:tid 140171374532160] [remote 127.0.0.1:35976]     mod = importlib.import_module(self.SETTINGS_MODULE)
+[Sat Oct 16 17:57:13.452634 2021] [wsgi:error] [pid 12480:tid 140171374532160] [remote 127.0.0.1:35976]   File "/usr/lib/python3.9/importlib/__init__.py", line 127, in import_module
+[Sat Oct 16 17:57:13.452639 2021] [wsgi:error] [pid 12480:tid 140171374532160] [remote 127.0.0.1:35976]     return _bootstrap._gcd_import(name[level:], package, level)
+[Sat Oct 16 17:57:13.452647 2021] [wsgi:error] [pid 12480:tid 140171374532160] [remote 127.0.0.1:35976]   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+[Sat Oct 16 17:57:13.452657 2021] [wsgi:error] [pid 12480:tid 140171374532160] [remote 127.0.0.1:35976]   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+[Sat Oct 16 17:57:13.452667 2021] [wsgi:error] [pid 12480:tid 140171374532160] [remote 127.0.0.1:35976]   File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+[Sat Oct 16 17:57:13.452686 2021] [wsgi:error] [pid 12480:tid 140171374532160] [remote 127.0.0.1:35976] ModuleNotFoundError: No module named 'website.settings'
+127.0.0.1 - - [16/Oct/2021:17:57:13 +0200] "GET / HTTP/1.1" 500 809 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+[Sat Oct 16 15:58:12.205333 2021] [wsgi:error] [pid 12692:tid 140015779157568] [remote 127.0.0.1:35984] Invalid HTTP_HOST header: 'imjaimeortiz.com'. You may need to add 'imjaimeortiz.com' to ALLOWED_HOSTS.
+[Sat Oct 16 15:58:12.244404 2021] [wsgi:error] [pid 12692:tid 140015779157568] [remote 127.0.0.1:35984] Bad Request: /
+127.0.0.1 - - [16/Oct/2021:17:58:11 +0200] "GET / HTTP/1.1" 400 62896 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+[Sat Oct 16 15:58:27.342623 2021] [wsgi:error] [pid 12692:tid 140015661659712] [remote 127.0.0.1:35986] Invalid HTTP_HOST header: 'imjaimeortiz.com'. You may need to add 'imjaimeortiz.com' to ALLOWED_HOSTS.
+[Sat Oct 16 15:58:27.386074 2021] [wsgi:error] [pid 12692:tid 140015661659712] [remote 127.0.0.1:35986] Bad Request: /
+127.0.0.1 - - [16/Oct/2021:17:58:27 +0200] "GET / HTTP/1.1" 400 62896 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+[Sat Oct 16 15:58:28.470987 2021] [wsgi:error] [pid 12692:tid 140015779157568] [remote 127.0.0.1:35988] Invalid HTTP_HOST header: 'imjaimeortiz.com'. You may need to add 'imjaimeortiz.com' to ALLOWED_HOSTS.
+[Sat Oct 16 15:58:28.591577 2021] [wsgi:error] [pid 12692:tid 140015779157568] [remote 127.0.0.1:35988] Bad Request: /
+127.0.0.1 - - [16/Oct/2021:17:58:28 +0200] "GET / HTTP/1.1" 400 62896 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+[Sat Oct 16 15:58:29.572174 2021] [wsgi:error] [pid 12692:tid 140015661659712] [remote 127.0.0.1:35990] Invalid HTTP_HOST header: 'imjaimeortiz.com'. You may need to add 'imjaimeortiz.com' to ALLOWED_HOSTS.
+[Sat Oct 16 15:58:29.663083 2021] [wsgi:error] [pid 12692:tid 140015661659712] [remote 127.0.0.1:35990] Bad Request: /
+127.0.0.1 - - [16/Oct/2021:17:58:29 +0200] "GET / HTTP/1.1" 400 62896 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+[Sat Oct 16 15:58:31.587987 2021] [wsgi:error] [pid 12692:tid 140015779157568] [remote 127.0.0.1:35992] Invalid HTTP_HOST header: 'imjaimeortiz.com'. You may need to add 'imjaimeortiz.com' to ALLOWED_HOSTS.
+[Sat Oct 16 15:58:31.689207 2021] [wsgi:error] [pid 12692:tid 140015779157568] [remote 127.0.0.1:35992] Bad Request: /
+127.0.0.1 - - [16/Oct/2021:17:58:31 +0200] "GET / HTTP/1.1" 400 62759 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+[Sat Oct 16 15:58:46.081107 2021] [wsgi:error] [pid 12692:tid 140015661659712] [remote 127.0.0.1:36002] Invalid HTTP_HOST header: 'imjaimeortiz.com'. You may need to add 'imjaimeortiz.com' to ALLOWED_HOSTS.
+[Sat Oct 16 15:58:46.170728 2021] [wsgi:error] [pid 12692:tid 140015661659712] [remote 127.0.0.1:36002] Bad Request: /
+127.0.0.1 - - [16/Oct/2021:17:58:46 +0200] "GET / HTTP/1.1" 400 62896 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+[Sat Oct 16 15:59:15.002979 2021] [wsgi:error] [pid 12692:tid 140015779157568] [remote 127.0.0.1:36010] Invalid HTTP_HOST header: 'imjaimeortiz.com'. You may need to add 'imjaimeortiz.com' to ALLOWED_HOSTS.
+[Sat Oct 16 15:59:15.100119 2021] [wsgi:error] [pid 12692:tid 140015779157568] [remote 127.0.0.1:36010] Bad Request: /
+127.0.0.1 - - [16/Oct/2021:17:59:15 +0200] "GET / HTTP/1.1" 400 62896 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+[Sat Oct 16 15:59:17.544175 2021] [wsgi:error] [pid 12692:tid 140015661659712] [remote 127.0.0.1:36014] Invalid HTTP_HOST header: 'imjaimeortiz.com'. You may need to add 'imjaimeortiz.com' to ALLOWED_HOSTS.
+[Sat Oct 16 15:59:17.630068 2021] [wsgi:error] [pid 12692:tid 140015661659712] [remote 127.0.0.1:36014] Bad Request: /
+127.0.0.1 - - [16/Oct/2021:17:59:17 +0200] "GET / HTTP/1.1" 400 62896 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+[Sat Oct 16 16:00:30.625914 2021] [wsgi:error] [pid 12692:tid 140015779157568] [remote 127.0.0.1:36068] Invalid HTTP_HOST header: 'imjaimeortiz.com'. You may need to add 'imjaimeortiz.com' to ALLOWED_HOSTS.
+[Sat Oct 16 16:00:30.734944 2021] [wsgi:error] [pid 12692:tid 140015779157568] [remote 127.0.0.1:36068] Bad Request: /
+127.0.0.1 - - [16/Oct/2021:18:00:30 +0200] "GET / HTTP/1.1" 400 62759 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+[Sat Oct 16 16:00:55.926407 2021] [wsgi:error] [pid 12692:tid 140015661659712] [remote 127.0.0.1:36070] Invalid HTTP_HOST header: 'imjaimeortiz.com'. You may need to add 'imjaimeortiz.com' to ALLOWED_HOSTS.
+[Sat Oct 16 16:00:56.023893 2021] [wsgi:error] [pid 12692:tid 140015661659712] [remote 127.0.0.1:36070] Bad Request: /
+127.0.0.1 - - [16/Oct/2021:18:00:55 +0200] "GET / HTTP/1.1" 400 62896 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+[Sat Oct 16 16:00:57.063983 2021] [wsgi:error] [pid 12692:tid 140015779157568] [remote 127.0.0.1:36072] Invalid HTTP_HOST header: 'imjaimeortiz.com'. You may need to add 'imjaimeortiz.com' to ALLOWED_HOSTS.
+[Sat Oct 16 16:00:57.159115 2021] [wsgi:error] [pid 12692:tid 140015779157568] [remote 127.0.0.1:36072] Bad Request: /
+127.0.0.1 - - [16/Oct/2021:18:00:57 +0200] "GET / HTTP/1.1" 400 62897 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+[Sat Oct 16 16:01:26.286630 2021] [wsgi:error] [pid 12692:tid 140015661659712] [remote 127.0.0.1:36080] Invalid HTTP_HOST header: 'imjaimeortiz.com'. You may need to add 'imjaimeortiz.com' to ALLOWED_HOSTS.
+[Sat Oct 16 16:01:26.382236 2021] [wsgi:error] [pid 12692:tid 140015661659712] [remote 127.0.0.1:36080] Bad Request: /
+127.0.0.1 - - [16/Oct/2021:18:01:26 +0200] "GET / HTTP/1.1" 400 62897 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+[Sat Oct 16 16:01:27.352621 2021] [wsgi:error] [pid 12692:tid 140015779157568] [remote 127.0.0.1:36082] Invalid HTTP_HOST header: 'imjaimeortiz.com'. You may need to add 'imjaimeortiz.com' to ALLOWED_HOSTS.
+[Sat Oct 16 16:01:27.449145 2021] [wsgi:error] [pid 12692:tid 140015779157568] [remote 127.0.0.1:36082] Bad Request: /
+127.0.0.1 - - [16/Oct/2021:18:01:27 +0200] "GET / HTTP/1.1" 400 62897 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:03:18 +0200] "GET / HTTP/1.1" 200 2164 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:03:18 +0200] "GET /static/portrait.jpeg HTTP/1.1" 200 291630 "http://imjaimeortiz.com/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:03:27 +0200] "GET /project HTTP/1.1" 200 2088 "http://imjaimeortiz.com/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:03:27 +0200] "GET /favicon.ico HTTP/1.1" 200 2072 "http://imjaimeortiz.com/project" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:03:32 +0200] "GET / HTTP/1.1" 200 2164 "http://imjaimeortiz.com/project" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:03:35 +0200] "GET /Python HTTP/1.1" 200 2316 "http://imjaimeortiz.com/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:03:37 +0200] "GET /Java HTTP/1.1" 200 3710 "http://imjaimeortiz.com/Python" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:03:41 +0200] "GET /C++ HTTP/1.1" 200 2366 "http://imjaimeortiz.com/Java" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:03:43 +0200] "GET /Android HTTP/1.1" 200 2523 "http://imjaimeortiz.com/C++" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:03:45 +0200] "GET /Other HTTP/1.1" 200 2522 "http://imjaimeortiz.com/Android" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:03:46 +0200] "GET /static/LEGO_Seguridad.pdf HTTP/1.1" 200 5620760 "http://imjaimeortiz.com/Other" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:03:52 +0200] "GET /Python HTTP/1.1" 200 2317 "http://imjaimeortiz.com/Other" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:03:53 +0200] "GET /static/TFG_OrtizAragonJaime.pdf HTTP/1.1" 200 5734899 "http://imjaimeortiz.com/Python" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:03:56 +0200] "GET /project HTTP/1.1" 200 2087 "http://imjaimeortiz.com/Python" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:03:59 +0200] "GET /project HTTP/1.1" 200 2087 "http://imjaimeortiz.com/project" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:03:59 +0200] "GET /project HTTP/1.1" 200 2087 "http://imjaimeortiz.com/project" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:04:01 +0200] "GET /model HTTP/1.1" 200 2086 "http://imjaimeortiz.com/project" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:04:05 +0200] "GET /model HTTP/1.1" 200 2086 "http://imjaimeortiz.com/model" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:04:06 +0200] "GET / HTTP/1.1" 200 2163 "http://imjaimeortiz.com/model" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:04:28 +0200] "GET /project HTTP/1.1" 200 2088 "http://imjaimeortiz.com/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+[Sat Oct 16 16:05:07.874554 2021] [wsgi:error] [pid 13325:tid 140424018912832] [remote 127.0.0.1:36204] Invalid HTTP_HOST header: 'localhost'. You may need to add 'localhost' to ALLOWED_HOSTS.
+[Sat Oct 16 16:05:07.996239 2021] [wsgi:error] [pid 13325:tid 140424018912832] [remote 127.0.0.1:36204] Bad Request: /
+127.0.0.1 - - [16/Oct/2021:18:05:07 +0200] "GET / HTTP/1.1" 400 64015 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:05:12 +0200] "GET / HTTP/1.1" 200 2164 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:05:13 +0200] "GET /static/portrait.jpeg HTTP/1.1" 200 291630 "http://127.0.0.1/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:05:15 +0200] "GET /project HTTP/1.1" 200 2087 "http://127.0.0.1/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:05:16 +0200] "GET / HTTP/1.1" 200 2163 "http://127.0.0.1/project" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:05:39 +0200] "GET / HTTP/1.1" 200 2164 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:05:39 +0200] "GET /favicon.ico HTTP/1.1" 200 2072 "http://imjaimeortiz.com/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:06:02 +0200] "GET /project HTTP/1.1" 200 2088 "http://imjaimeortiz.com/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:06:02 +0200] "GET /favicon.ico HTTP/1.1" 200 2072 "http://imjaimeortiz.com/project" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:10:53 +0200] "GET /project HTTP/1.1" 200 2088 "http://imjaimeortiz.com/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:10:54 +0200] "GET / HTTP/1.1" 200 2163 "http://imjaimeortiz.com/project" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:13:40 +0200] "GET /project HTTP/1.1" 200 2088 "http://imjaimeortiz.com/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:13:45 +0200] "GET /project HTTP/1.1" 200 2088 "http://imjaimeortiz.com/project" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:13:46 +0200] "GET /project HTTP/1.1" 200 2087 "http://imjaimeortiz.com/project" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:13:57 +0200] "GET /project HTTP/1.1" 200 2088 "http://imjaimeortiz.com/project" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:13:57 +0200] "GET /project HTTP/1.1" 200 2087 "http://imjaimeortiz.com/project" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:14:47 +0200] "GET /project HTTP/1.1" 200 2088 "http://imjaimeortiz.com/project" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:14:48 +0200] "GET /project HTTP/1.1" 200 2087 "http://imjaimeortiz.com/project" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:14:48 +0200] "GET /project HTTP/1.1" 200 2087 "http://imjaimeortiz.com/project" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:14:49 +0200] "GET /project HTTP/1.1" 200 2087 "http://imjaimeortiz.com/project" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:15:31 +0200] "GET /admin HTTP/1.1" 200 2089 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:15:39 +0200] "GET /admin HTTP/1.1" 200 2089 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:15:39 +0200] "GET /favicon.ico HTTP/1.1" 200 2072 "http://imjaimeortiz.com/admin" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:15:55 +0200] "GET /admin HTTP/1.1" 200 2089 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:15:55 +0200] "GET /favicon.ico HTTP/1.1" 200 2072 "http://127.0.0.1/admin" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:17:38 +0200] "GET /admin/ HTTP/1.1" 302 456 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:17:38 +0200] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1526 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:17:38 +0200] "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 1012 "http://imjaimeortiz.com/admin/login/?next=/admin/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:17:38 +0200] "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 762 "http://imjaimeortiz.com/admin/login/?next=/admin/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:17:38 +0200] "GET /static/admin/css/base.css HTTP/1.1" 200 4896 "http://imjaimeortiz.com/admin/login/?next=/admin/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:17:38 +0200] "GET /static/admin/css/login.css HTTP/1.1" 200 745 "http://imjaimeortiz.com/admin/login/?next=/admin/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:17:38 +0200] "GET /static/admin/css/responsive.css HTTP/1.1" 200 3803 "http://imjaimeortiz.com/admin/login/?next=/admin/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:17:38 +0200] "GET /static/admin/css/fonts.css HTTP/1.1" 200 486 "http://imjaimeortiz.com/static/admin/css/base.css" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:17:38 +0200] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 86164 "http://imjaimeortiz.com/static/admin/css/fonts.css" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:17:38 +0200] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85980 "http://imjaimeortiz.com/static/admin/css/fonts.css" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+[Sat Oct 16 16:17:54.699245 2021] [wsgi:error] [pid 13325:tid 140424018912832] [remote 127.0.0.1:36354] Not Found: /projects/
+127.0.0.1 - - [16/Oct/2021:18:17:54 +0200] "GET /projects/ HTTP/1.1" 404 3093 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:17:59 +0200] "GET /projects HTTP/1.1" 200 2088 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:18:09 +0200] "GET /project HTTP/1.1" 200 2088 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:18:15 +0200] "GET /project HTTP/1.1" 200 2088 "http://imjaimeortiz.com/project" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:19:23 +0200] "GET /Python HTTP/1.1" 200 2317 "http://imjaimeortiz.com/project" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:19:54 +0200] "GET /model HTTP/1.1" 200 2087 "http://imjaimeortiz.com/Python" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:19:55 +0200] "GET /model HTTP/1.1" 200 2086 "http://imjaimeortiz.com/model" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:19:56 +0200] "GET /model HTTP/1.1" 200 2086 "http://imjaimeortiz.com/model" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:19:56 +0200] "GET /model HTTP/1.1" 200 2086 "http://imjaimeortiz.com/model" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:20:44 +0200] "GET /model HTTP/1.1" 200 2087 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+[Sat Oct 16 16:20:54.068989 2021] [wsgi:error] [pid 13325:tid 140424018912832] [remote 127.0.0.1:36388] Not Found: /shooting/4
+127.0.0.1 - - [16/Oct/2021:18:20:54 +0200] "GET /shooting/4 HTTP/1.1" 404 3096 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:21:12 +0200] "GET /model/4 HTTP/1.1" 301 302 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+[Sat Oct 16 16:21:12.519623 2021] [wsgi:error] [pid 13325:tid 140424018912832] [remote 127.0.0.1:36394] Not Found: /model/4/
+127.0.0.1 - - [16/Oct/2021:18:21:12 +0200] "GET /model/4/ HTTP/1.1" 404 3275 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:21:17 +0200] "GET /model/6/ HTTP/1.1" 200 2080 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:21:17 +0200] "GET /media/images/first.JPG HTTP/1.1" 200 73422 "http://imjaimeortiz.com/model/6/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:21:21 +0200] "GET /model HTTP/1.1" 200 2086 "http://imjaimeortiz.com/model/6/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:21:26 +0200] "GET / HTTP/1.1" 200 2164 "http://imjaimeortiz.com/model" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:21:38 +0200] "GET /Java HTTP/1.1" 200 3711 "http://imjaimeortiz.com/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:21:40 +0200] "GET /Python HTTP/1.1" 200 2316 "http://imjaimeortiz.com/Java" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:21:41 +0200] "GET /C++ HTTP/1.1" 200 2366 "http://imjaimeortiz.com/Python" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:21:42 +0200] "GET /Android HTTP/1.1" 200 2523 "http://imjaimeortiz.com/C++" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:21:43 +0200] "GET /Other HTTP/1.1" 200 2522 "http://imjaimeortiz.com/Android" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:22:50 +0200] "GET / HTTP/1.1" 200 2164 "http://imjaimeortiz.com/Other" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:22:51 +0200] "GET /project/ HTTP/1.1" 200 4670 "http://imjaimeortiz.com/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:22:53 +0200] "GET /model HTTP/1.1" 200 2086 "http://imjaimeortiz.com/project/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:22:55 +0200] "GET /project HTTP/1.1" 200 2087 "http://imjaimeortiz.com/model" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:22:56 +0200] "GET / HTTP/1.1" 200 2163 "http://imjaimeortiz.com/project" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:22:58 +0200] "GET /model/ HTTP/1.1" 200 2601 "http://imjaimeortiz.com/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:22:58 +0200] "GET /media/images/second.jpg HTTP/1.1" 200 70013 "http://imjaimeortiz.com/model/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:22:58 +0200] "GET /media/images/eci.jpg HTTP/1.1" 200 146943 "http://imjaimeortiz.com/model/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:22:58 +0200] "GET /media/images/editorial.jpg HTTP/1.1" 200 973368 "http://imjaimeortiz.com/model/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:22:58 +0200] "GET /media/images/josemartian1.jpg HTTP/1.1" 200 147690 "http://imjaimeortiz.com/model/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:22:58 +0200] "GET /media/images/pull1.JPG HTTP/1.1" 200 126928 "http://imjaimeortiz.com/model/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:22:58 +0200] "GET /media/images/locco.JPG HTTP/1.1" 200 24026 "http://imjaimeortiz.com/model/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:22:58 +0200] "GET /media/images/neuman.PNG HTTP/1.1" 200 327260 "http://imjaimeortiz.com/model/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:22:58 +0200] "GET /media/images/editorial2.jpg HTTP/1.1" 200 3231645 "http://imjaimeortiz.com/model/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:22:58 +0200] "GET /media/images/josemartian2.JPG HTTP/1.1" 200 1323003 "http://imjaimeortiz.com/model/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:22:58 +0200] "GET /media/images/punctumcreativo.jpg HTTP/1.1" 200 127242 "http://imjaimeortiz.com/model/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:22:58 +0200] "GET /media/images/wedding.JPG HTTP/1.1" 200 157893 "http://imjaimeortiz.com/model/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:22:58 +0200] "GET /media/images/josemartian.jpg HTTP/1.1" 200 166200 "http://imjaimeortiz.com/model/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:22:58 +0200] "GET /media/images/pablo.jpg HTTP/1.1" 200 144340 "http://imjaimeortiz.com/model/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:22:58 +0200] "GET /media/images/selma.JPG HTTP/1.1" 200 716834 "http://imjaimeortiz.com/model/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:22:58 +0200] "GET /media/images/mustang.jpg HTTP/1.1" 200 181651 "http://imjaimeortiz.com/model/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:22:58 +0200] "GET /media/images/dog.jpg HTTP/1.1" 200 221716 "http://imjaimeortiz.com/model/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:22:58 +0200] "GET /static/video_model.mp4 HTTP/1.1" 206 9095147 "http://imjaimeortiz.com/model/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:22:59 +0200] "GET / HTTP/1.1" 200 2163 "http://imjaimeortiz.com/model/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:24:06 +0200] "GET / HTTP/1.1" 200 2164 "http://imjaimeortiz.com/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:24:08 +0200] "GET /project/ HTTP/1.1" 200 4670 "http://imjaimeortiz.com/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:24:10 +0200] "GET /model HTTP/1.1" 200 2087 "http://imjaimeortiz.com/project/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:24:19 +0200] "GET /model/ HTTP/1.1" 200 2601 "http://imjaimeortiz.com/model" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:24:20 +0200] "GET /model/ HTTP/1.1" 200 2600 "http://imjaimeortiz.com/model/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:24:21 +0200] "GET /project/ HTTP/1.1" 200 4670 "http://imjaimeortiz.com/model/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:24:23 +0200] "GET /model HTTP/1.1" 200 2087 "http://imjaimeortiz.com/project/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:24:24 +0200] "GET /project/ HTTP/1.1" 200 4670 "http://imjaimeortiz.com/model" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:24:25 +0200] "GET /Python HTTP/1.1" 200 2316 "http://imjaimeortiz.com/project/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:24:26 +0200] "GET /model/ HTTP/1.1" 200 2600 "http://imjaimeortiz.com/Python" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:24:27 +0200] "GET /favicon.ico HTTP/1.1" 200 2072 "http://imjaimeortiz.com/model/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:24:28 +0200] "GET /project/ HTTP/1.1" 200 4671 "http://imjaimeortiz.com/model/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:24:29 +0200] "GET /model HTTP/1.1" 200 2087 "http://imjaimeortiz.com/project/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:24:42 +0200] "GET / HTTP/1.1" 200 2164 "http://imjaimeortiz.com/model" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:24:44 +0200] "GET /project/ HTTP/1.1" 200 4672 "http://imjaimeortiz.com/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:24:46 +0200] "GET /model/ HTTP/1.1" 200 2600 "http://imjaimeortiz.com/project/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:24:49 +0200] "GET /project/ HTTP/1.1" 200 4672 "http://imjaimeortiz.com/model/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:24:51 +0200] "GET /Python HTTP/1.1" 200 2316 "http://imjaimeortiz.com/project/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:24:52 +0200] "GET /model/ HTTP/1.1" 200 2600 "http://imjaimeortiz.com/Python" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:24:54 +0200] "GET /project/ HTTP/1.1" 200 4672 "http://imjaimeortiz.com/model/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:24:55 +0200] "GET /Java HTTP/1.1" 200 3710 "http://imjaimeortiz.com/project/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:24:56 +0200] "GET /project/ HTTP/1.1" 200 4672 "http://imjaimeortiz.com/Java" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:24:59 +0200] "GET /model/ HTTP/1.1" 200 2600 "http://imjaimeortiz.com/project/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:25:01 +0200] "GET /model/7/ HTTP/1.1" 200 2096 "http://imjaimeortiz.com/model/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:25:02 +0200] "GET /model/ HTTP/1.1" 200 2600 "http://imjaimeortiz.com/model/7/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:25:04 +0200] "GET /model/8/ HTTP/1.1" 200 2090 "http://imjaimeortiz.com/model/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:25:05 +0200] "GET /project/ HTTP/1.1" 200 4672 "http://imjaimeortiz.com/model/8/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
+127.0.0.1 - - [16/Oct/2021:18:25:06 +0200] "GET / HTTP/1.1" 200 2163 "http://imjaimeortiz.com/project/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0"
